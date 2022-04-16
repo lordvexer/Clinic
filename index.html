@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>سیستم نوبت دهی</title>
     <link href="/libs/bootstrap/css/bootstrap.rtl.min.css" rel="stylesheet" type="text/css" />
-    <link href="/css/custom1.css" rel="stylesheet" type="text/css" />
+    <link href="/css/Index.css" rel="stylesheet" type="text/css" />
     <!-- FavIcons Add -->
     <meta name="theme-color" content="#f1c40f">
 </head>
@@ -29,63 +29,51 @@
                 <form class="d-flex">
                     <input class="form-control me-2 SearchBox" type="search" placeholder="جستجو کنید..." aria-label="Search">
                     <button type="button" class="btn btn-success ChangeLNG" data-bs-toggle="modal" data-bs-target="#LoginForm">ورود</button>
-                    <a href="/IndexEn.html">
-                        <button class="btn btn-success ChangeLNG" role="button">EN</button>
-                    </a>
                 </form>
-                <!-- LoginForm -->
-                <!-- Modal -->
-                <div class="modal fade" id="LoginForm">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-
-                            <div class="modal-body">
-                                <div class="LoginModal">
-                                    <input class="Logininput" type="checkbox" id="chk" aria-hidden="true">
-                                    <input class="Logininput" type="checkbox" id="chk_register" aria-hidden="true">
-                                    <div class="signin">
-                                        <form autocomplete="on">
-                                            <label class="Loginlabel" for="chk" aria-hidden="true">وارد شوید</label>
-                                            <input class="Logininput" type="text" name="txt" placeholder="نام کاربری" required="">
-                                            <input class="Logininput" type="password" name="pswd" placeholder="کلمه عبور" required="">
-                                            <button class="Loginbutton">ورود</button>
-                                        </form>
-                                    </div>
-                                    <div class="ForgetPass">
-                                        <form>
-                                            <label class="Loginlabel" for="chk" aria-hidden="true">فراموشی رمز
-                                                عبور</label>
-                                            <input class="Logininput" type="tel" id="phone" name="phone" placeholder="تلفن همراه" pattern="[0]{1}[9]{1}[0-9]{9}" required>
-                                            <button class="Loginbutton">ارسال رمز</button>
-                                        </form>
-                                    </div>
-                                    <div class="Signup">
-                                        <form>
-                                            <label class="Loginlabel" for="chk_register" aria-hidden="true">ثبت
-                                                نام</label>
-                                            <input class="Logininput" type="number" name="Melli" placeholder="شناسه ملی" required="a">
-                                            <input class="Logininput" type="number" name="Melli" placeholder="کد اقتصادی" required="a">
-                                            <button class="Loginbutton">ثبت نام اولیه</button>
-                                        </form>
-                                    </div>
-
+            </div>
+        </div>
+    </nav>
+    <!-- LoginForm -->
+    <!-- Modal -->
+    <div class="modal fade" id="LoginForm">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="LoginModal">
+                        <input class="Logininput" type="checkbox" id="chk" aria-hidden="true">
+                        <div class="signin">
+                            <form autocomplete="on">
+                                <img class="img-fluid col-4 rounded mx-auto d-block LoginImgLogo" src="/img/logo.svg" alt="Login logo">
+                                <label class="Loginlabel" for="chk" aria-hidden="true">وارد شوید</label>
+                                <input class="Logininput" type="text" name="txt" placeholder="نام کاربری" required="">
+                                <input class="Logininput" type="password" name="pswd" placeholder="کلمه عبور" required="">
+                                <div class="d-flex">
+                                    <button class="OtpBtn">OTP</button>
+                                    <input class="Otpinput" type="password" name="Otp" placeholder="رمز یکبار مصرف" required="">
                                 </div>
-                            </div>
+                                <button class="Loginbutton">ورود</button>
+                            </form>
+                        </div>
+                        <div class="ForgetPass">
+                            <form>
+                                <label class="Loginlabel" for="chk" aria-hidden="true">فراموشی رمز
+                                                عبور</label>
+                                <input class="Logininput" type="tel" id="phone" name="phone" placeholder="تلفن همراه" pattern="[0]{1}[9]{1}[0-9]{9}" required>
+                                <button class="Loginbutton">ارسال امکان بازیابی</button>
+                            </form>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </nav>
+    </div>
 
     <!-- Header -->
     <div class="container-fluid FitNav">
         <header>
             <div class="row">
                 <div class="col-12">
-                    <img class="col-7 col-sm col-md-5 col-lg-6 col-xl-4 img-fluid rounded mx-auto d-block  HeaderIMGFIT " src="/img/H1.svg">
-                    <img class="col-2 col-sm-2 col-md-2 col-lg-1 col-xl-1 flag" src="/img/flag.svg" alt="">
-                    <img class="col-2 col-sm-2 col-md-2 col-lg-1 col-xl-1 YearT" src="/img/Year.svg" alt="">
+                    <img class="col-7 col-sm col-md-5 col-lg-6 col-xl-4 img-fluid rounded mx-auto d-block  HeaderLogo " src="/img/logo.svg" alt="HeaderLogo">
                 </div>
             </div>
         </header>
@@ -111,7 +99,6 @@
     <script src="/js/jquery-3.6.0.min.js"></script>
     <script src="/libs/bootstrap/js/bootst.min.js"></script>
     <script src="/js/customjs.js"></script>
-    <script src="/js/mainjs.js"></script>
 
 
 
