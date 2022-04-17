@@ -1,0 +1,44 @@
+/* Medical Record */
+
+.FormInline {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: baseline;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: flex-start;
+    margin-top: 5.6rem;
+    margin-right: 5rem;
+}
+
+.form-control {
+    border-radius: 7px;
+    direction: rtl;
+}
+
+.mb-3 {
+    margin-left: 1rem;
+}
+
+@media screen and (max-width:600px) {
+    .FormInline {
+        margin-right: 2rem;
+    }
+}
+
+
+/* Inputs class */
+
+.Qbime {
+    width: 8rem;
+}
+
+.Gender {
+    width: 8rem;
+    height: 56px;
+}
+
+.Address {
+    height: 10rem;
+}

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="fa">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>سیستم نوبت دهی</title>
+    <link href="/libs/bootstrap/css/bootstrap.rtl.min.css" rel="stylesheet" type="text/css" />
+    <link href="/css/CustomAdminPanel.css" rel="stylesheet" type="text/css" />
+    <link href='/libs/SideBar/boxicons.min.css' rel='stylesheet'>
+    <link href="/libs/SideBar/style.css" rel="stylesheet">
+    <!-- FavIcons Add -->
+    <meta name="theme-color" content="#2980b9">
+</head>
+
+<body>
+
+
+
+
+    <!-- Side Bar -->
+    <nav>
+        <div class="sidebar-top">
+            <span class="shrink-btn">
+                <i class='bx bx-chevron-left'></i>
+            </span>
+            <img src="/img/logo.svg" class="logo" alt="">
+            <h3 class="hide">کلینیک</h3>
+        </div>
+
+        <div class="search">
+            <i class='bx bx-search'></i>
+            <input type="text" class="hide" placeholder="جستجو سریع">
+        </div>
+
+        <div class="sidebar-links">
+            <ul>
+                <div class="active-tab"></div>
+                <li class="tooltip-element" data-tooltip="0">
+                    <a href="#" class="active" data-active="0">
+                        <div class="icon">
+                            <i class='bx bx-tachometer'></i>
+                            <i class='bx bxs-tachometer'></i>
+                        </div>
+                        <span class="link hide">داشبورد</span>
+                    </a>
+                </li>
+                <li class="tooltip-element" data-tooltip="1">
+                    <a href="#" data-active="1">
+                        <div class="icon">
+                            <i class='bx bx-folder'></i>
+                            <i class='bx bxs-folder'></i>
+                        </div>
+                        <span class="link hide">ثبت پرونده</span>
+                    </a>
+                </li>
+                <li class="tooltip-element" data-tooltip="2">
+                    <a href="#" data-active="2">
+                        <div class="icon">
+                            <i class='bx bx-message-square-detail'></i>
+                            <i class='bx bxs-message-square-detail'></i>
+                        </div>
+                        <span class="link hide">لیست بیماران</span>
+                    </a>
+                </li>
+                <li class="tooltip-element" data-tooltip="3">
+                    <a href="#" data-active="3">
+                        <div class="icon">
+                            <i class='bx bx-bar-chart-square'></i>
+                            <i class='bx bxs-bar-chart-square'></i>
+                        </div>
+                        <span class="link hide">سیستم پیامک</span>
+                    </a>
+                </li>
+                <div class="tooltip">
+                    <span class="show">Dashboard</span>
+                    <span>Projects</span>
+                    <span>Messages</span>
+                    <span>Analytics</span>
+                </div>
+            </ul>
+
+            <div class="tooltip">
+                <span class="show">Tasks</span>
+                <span>Help</span>
+                <span>Settings</span>
+            </div>
+            </ul>
+        </div>
+
+        <div class="sidebar-footer">
+            <a href="#" class="account tooltip-element" data-tooltip="0">
+                <i class='bx bx-user'></i>
+            </a>
+            <div class="admin-user tooltip-element" data-tooltip="1">
+                <div class="admin-profile hide">
+                    <img src="./img/face-1.png" alt="">
+                    <div class="admin-info">
+                        <h3>دکتر هوشنگ</h3>
+                        <h5>Admin</h5>
+                    </div>
+                </div>
+                <a href="#" class="log-out">
+                    <i class='bx bx-log-out'></i>
+                </a>
+            </div>
+            <div class="tooltip">
+                <span class="show">John Doe</span>
+                <span>Logout</span>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+    <!-- Medical Record -->
+    <div class="container-fluid">
+        <form class="FormInline">
+            <div class="form-floating mb-3">
+                <input type="email" class="form-control Qbime" id="floatingInput" placeholder="name@example.com">
+                <label for="floatingInput">کد سریع بیمه</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                <label for="floatingInput">شماره بیمه</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                <label for="floatingInput"> شماره پرونده</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                <label for="floatingInput"> کد ملی</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                <label for="floatingInput"> نام</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                <label for="floatingInput"> نام خانوادگی</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                <label for="floatingInput"> نام پدر</label>
+            </div>
+            <select class="form-select form-select-lg mb-3 Gender" aria-label=".form-select-lg example">
+                <option value="1">مرد</option>
+                <option value="2">زن</option>
+                <option value="3">سایر</option>
+            </select>
+            <div class="form-floating mb-3">
+                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                <label for="floatingInput"> شغل</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                <label for="floatingInput"> تلفن ثابت</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                <label for="floatingInput"> تلفن همراه</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control Address" id="floatingInput" placeholder="name@example.com">
+                <label for="floatingInput"> آدرس</label>
+            </div>
+        </form>
+        <div class="FormInline">
+            <button class="btn btn-primary" type="submit">ثبت</button>
+            <button class="btn btn-primary" type="submit">ریست کردن</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+
+
+
+
+
+
+
+
+    <!-- Scripts -->
+    <script src="/js/jquery-3.6.0.min.js"></script>
+    <script src="/libs/bootstrap/js/bootst.min.js"></script>
+    <script src="/js/customjs.js"></script>
+    <script src="/libs/SideBar/app.js"></script>
+
+
+
+
+</body>
