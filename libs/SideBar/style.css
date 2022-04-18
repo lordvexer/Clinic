@@ -1,3 +1,11 @@
+@font-face {
+    font-family: "iranyekan";
+    src: url("/libs/Fonts/iranyekanwebmedium.eot");
+    src: url("/libs/Fonts/iranyekanwebmedium.woff") format("woff");
+    src: url("/libs/Fonts/iranyekanwebblack.eot");
+    src: url("/libs/Fonts/iranyekanwebblack.woff") format("woff");
+}
+
 *,
 *::before,
 *::after {
@@ -15,10 +23,12 @@
 
 body {
     overflow-x: hidden;
-    background-color: #e4e2f5;
+    background-color: #b3b3b3;
     min-height: 100vh;
     display: flex;
     position: relative;
+    font-family: 'iranyekan', tahoma, Arial;
+    -webkit-font-smoothing: antialiased;
 }
 
 a {
@@ -370,4 +380,10 @@ body.shrink .tooltip {
 .ol,
 ul {
     padding-right: unset;
+}
+
+.card {
+    border-radius: 8px;
+    margin-top: 6rem;
+    width: 100%;
 }

@@ -26,7 +26,7 @@ search.addEventListener("click", () => {
 function moveActiveTab() {
     let topPosition = activeIndex * 58 + 2.5;
 
-    if (activeIndex > 3) {
+    if (activeIndex > 6) {
         topPosition += shortcuts.clientHeight;
     }
 
@@ -58,3 +58,12 @@ function showTooltip() {
 tooltip_elements.forEach((elem) => {
     elem.addEventListener("mouseover", showTooltip);
 });
+
+// Tabs
+function ChangeSection(evt, SectionName) {
+    var i, tabcontent, tablinks;
+    $('#' + SectionName).parent().find('.tabcontent').removeClass('active').css('display', 'none');
+    $('#' + SectionName).parent().find('.tablinks').removeClass('active');
+    document.getElementById(SectionName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
