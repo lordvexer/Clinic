@@ -199,9 +199,12 @@
 /* Table */
 
 .TableCard {
-    height: 650px;
+    height: 740px;
     overflow-y: auto;
-    width: 100%;
+}
+
+.table {
+    table-layout: fixed;
 }
 
 ::-webkit-scrollbar {

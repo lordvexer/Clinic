@@ -9,7 +9,7 @@ let activeIndex;
 
 shrink_btn.addEventListener("click", () => {
     document.body.classList.toggle("shrink");
-    setTimeout(moveActiveTab, 400);
+    setTimeout(moveActiveTab, 200);
 
     shrink_btn.classList.add("hovered");
 
