@@ -7,7 +7,17 @@
     flex-wrap: wrap;
     align-content: center;
     justify-content: center;
-    margin-top: 5.6rem;
+    margin-top: 2rem;
+}
+
+.FormInline2 {
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    margin-top: 2rem;
 }
 
 .form-control {
@@ -19,23 +29,24 @@
 
 .inline {
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
     align-items: stretch;
     align-content: stretch;
+    margin-bottom: 2rem;
+}
+
+.mb-3 {
+    margin: auto;
 }
 
 .Pointers {
     cursor: pointer;
 }
 
-.mb-3 {
-    margin-left: 1rem;
-}
-
 @media screen and (max-width:600px) {
-    .FormInline {
+    .FormInline .FormInline2 {
         margin-right: 2rem;
     }
 }
@@ -45,6 +56,10 @@
     margin: 0.1rem;
     color: #ffffff;
     max-height: 40px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    min-width: 244px;
+    align-items: center;
 }
 
 
@@ -195,12 +210,42 @@
     transform: scale(1);
 }
 
+.modal-dialog {
+    margin: 10.75rem auto;
+}
+
 
 /* Table */
 
 .TableCard {
-    height: 740px;
+    height: 815px;
     overflow-y: auto;
+}
+
+.TableCard th:nth-child(3),
+.TableCard th:nth-child(4),
+.TableCard th:nth-child(5) {
+    text-align: center;
+}
+
+.TableCard td:nth-child(3),
+.TableCard td:nth-child(4) {
+    text-align: center;
+}
+
+.SmsTableCard {
+    height: 815px;
+    overflow-y: auto;
+}
+
+.SmsTableCard th:nth-child(5),
+.SmsTableCard th:nth-child(6) {
+    text-align: center;
+}
+
+.SmsTableCard td:nth-child(5),
+.SmsTableCard td:nth-child(6) {
+    text-align: center;
 }
 
 .table {
@@ -238,7 +283,6 @@
     position: sticky;
     top: 0;
     background-color: #3d5af1;
-    height: 70px;
     color: #fff;
 }
 
@@ -255,4 +299,20 @@
 .SmsStatusFail {
     background-color: #c0392b;
     border: unset;
+}
+
+.tabcontent {
+    display: none;
+}
+
+.tabcontent.active {
+    display: block;
+}
+
+.hidden {
+    display: none;
+}
+
+.BtnFill {
+    width: -webkit-fill-available;
 }

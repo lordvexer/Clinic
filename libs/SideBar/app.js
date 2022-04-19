@@ -26,7 +26,7 @@ search.addEventListener("click", () => {
 function moveActiveTab() {
     let topPosition = activeIndex * 58 + 2.5;
 
-    if (activeIndex > 6) {
+    if (activeIndex > 7) {
         topPosition += shortcuts.clientHeight;
     }
 
@@ -50,7 +50,7 @@ function showTooltip() {
     let tooltipIndex = this.dataset.tooltip;
 
     Array.from(spans).forEach((sp) => sp.classList.remove("show"));
-    spans[tooltipIndex].classList.add("show");
+    if (spans[tooltipIndex]) spans[tooltipIndex].classList.add("show");
 
     tooltip.style.top = `${(100 / (spans.length * 2)) * (tooltipIndex * 2 + 1)}%`;
 }

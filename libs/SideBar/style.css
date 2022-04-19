@@ -1,9 +1,9 @@
 @font-face {
     font-family: "iranyekan";
-    src: url("/libs/Fonts/iranyekanwebmedium.eot");
-    src: url("/libs/Fonts/iranyekanwebmedium.woff") format("woff");
-    src: url("/libs/Fonts/iranyekanwebblack.eot");
-    src: url("/libs/Fonts/iranyekanwebblack.woff") format("woff");
+    src: url("/libs/Fonts/IranYekan/iranyekanwebmedium.eot");
+    src: url("/libs/Fonts/IranYekan/iranyekanwebmedium.woff") format("woff");
+    src: url("/libs/Fonts/IranYekan/iranyekanwebblack.eot");
+    src: url("/libs/Fonts/IranYekan/iranyekanwebblack.woff") format("woff");
 }
 
 *,
@@ -53,12 +53,6 @@ nav {
     transition: width 0.5s ease-in-out;
 }
 
-@media screen and (max-width:500px) {
-    nav {
-        width: 12rem;
-    }
-}
-
 nav::before {
     content: "";
     position: absolute;
@@ -86,7 +80,7 @@ nav::before {
 
 .shrink-btn {
     position: absolute;
-    top: 50%;
+    top: -55%;
     height: 27px;
     padding: 0 0.3rem;
     background-color: var(--main-color);
@@ -97,12 +91,12 @@ nav::before {
     transform: translateY(-50%) translateX(-8px);
     opacity: 100;
     pointer-events: none;
-    transition: 0.3s;
+    transition: 0.8s;
 }
 
 .shrink-btn i {
     line-height: 27px;
-    transition: 0.3s;
+    transition: 0.4s;
 }
 
 .shrink-btn:hover {
@@ -245,6 +239,7 @@ nav::before {
 .admin-user {
     display: flex;
     align-items: center;
+    flex-direction: column;
 }
 
 .admin-profile {
@@ -358,6 +353,10 @@ body.shrink .shrink-btn i {
     transform: rotate(-180deg);
 }
 
+body.shrink .shrink-btn {
+    right: 4rem;
+}
+
 body.shrink .sidebar-links h4 {
     height: 10px;
 }
@@ -384,6 +383,34 @@ ul {
 
 .card {
     border-radius: 8px;
+    margin-top: 2rem;
+    width: 100%;
+}
+
+.card2 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, .125);
+    border-radius: 8px;
     margin-top: 1rem;
     width: 100%;
+    /* visibility: hidden; */
+}
+
+@media screen and (max-width:500px) {
+    nav {
+        width: 12rem;
+    }
+    .shrink-btn,
+    .shrink-btn.hovered {
+        transform: translateY(-10%) translateX(70px);
+    }
+    body.shrink .shrink-btn {
+        right: 8rem;
+    }
 }
