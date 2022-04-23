@@ -125,7 +125,102 @@
             <span>خروج</span>
         </div>
     </nav>
-
+    <!-- Patient History Modal -->
+    <div class="modal fade" id="PatientHistory">
+        <div class="modal-dialog" style="max-width: 100%;">
+            <div class="modal-content">
+                <div class="modal-body ">
+                    <div class="PatientHistoryModal">
+                        <legend class="PatientHistoryModallegend">فیلتر بر اساس</legend>
+                        <input class=" Gender Logininput" type="tel" id="phone" name="phone" placeholder="نام پزشک" pattern="[0]{1}[9]{1}[0-9]{9}" required>
+                        <select class="form-select form-select-lg mb-3 Gender" aria-label=".form-select-lg example">
+                            <option value="1">نوع تجویز</option>
+                            <option value="2">ویزیت</option>
+                            <option value="3">ویزیت وخدمات</option>
+                            <option value="4">دارو</option>
+                            <option value="4">پاراکلینیک</option>
+                            <option value="4">خدمات</option>
+                        </select> <select class="form-select form-select-lg mb-3 Gender" aria-label=".form-select-lg example">
+                            <option value="1">تاریخ از</option>
+                        </select> <select class="form-select form-select-lg mb-3 Gender" aria-label=".form-select-lg example">
+                            <option value="1">تاریخ تا</option>
+                        </select> <select class="form-select form-select-lg mb-3 Gender" aria-label=".form-select-lg example">
+                            <option value="1">سال</option>
+                            <option value="2">1395</option>
+                            <option value="2">1396</option>
+                            <option value="2">1397</option>
+                            <option value="2">1398</option>
+                            <option value="2">1399</option>
+                            <option value="2">1400</option>
+                            <option value="2">1401</option>
+                        </select>
+                        <div class="inline InlineButton">
+                            <button class="btn btn-primary BtnForm" type=" ">جستجو</button>
+                            <button class="btn btn-primary BtnForm" type=" ">جستجو همه</button>
+                        </div>
+                        <div class="card TableCard ">
+                            <table class="table TableGui">
+                                <thead class="thead-primary">
+                                    <th style="border-top-right-radius: 8px;">کد نظام پزشکی</th>
+                                    <th>نام پزشک</th>
+                                    <th>تجویز</th>
+                                    <th>تاریخ ویزیت</th>
+                                    <th style="border-top-left-radius: 8px;">نوع نسخه</th>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row" class="scope">2322135</th>
+                                        <td>اسد اله تقیپور</td>
+                                        <td>دارو</td>
+                                        <td>1401/01/25</td>
+                                        <td>؟؟؟</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <nav class="paginationLayout" aria-label="Page navigation ">
+                                <ul class="pagination">
+                                    <li class="page-item">
+                                        <a class="page-link" href="#" aria-label="Previous">
+                                            <span aria-hidden="true">&laquo;</span>
+                                        </a>
+                                    </li>
+                                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#" aria-label="Next">
+                                            <span aria-hidden="true">&raquo;</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                            <div class="inline InlineButton">
+                                <button class="btn btn-primary BtnForm" style="min-width: 168px;" type="reset ">درج در لیست</button>
+                            </div>
+                        </div>
+                        <div class="card TableCard ">
+                            <table class="table TableGui">
+                                <thead class="thead-primary">
+                                    <th style="border-top-right-radius: 8px;">نام خدمت/دارو</th>
+                                    <th style="border-top-left-radius: 8px;">تعداد</th>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row" class="scope">استامینوفن</th>
+                                        <td>5</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="scope">دیفن هیدرامین</th>
+                                        <td>1</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- Acceptitan Modal -->
     <div class="modal fade" id="AcceptanceModal">
         <div class="modal-dialog">
@@ -241,7 +336,7 @@
             </div>
         </div>
     </div>
-    <!-- Doctor Page -->
+    <!-- Doctor & Prescription Page -->
     <div id="DoctorPage" class="tabcontent ">
         <div class="container-fluid BackGround">
             <div class="card TableCard ">
@@ -304,7 +399,7 @@
             <!-- Prescription Order -->
             <div class="card">
                 <form class="FormInline">
-                    <legend>اطلاعات بیمار</legend>
+                    <legend class="Prescriptionlegend">اطلاعات بیمار</legend>
                     <div class="form-floating mb-3">
                         <input type="email" class="form-control" id="floatingInput" value="222222" disabled>
                         <label for="floatingInput"> شماره پرونده</label>
@@ -371,12 +466,18 @@
                     <div class="inline InlineButton">
                         <button class="btn btn-primary BtnForm" type=" " disabled>خدمات ارجاعی</button>
                         <button class="btn btn-primary BtnForm" type=" " disabled>حساسیت دارویی</button>
-                        <button class="btn btn-primary BtnForm" type=" ">سوابق بیمار</button>
+                        <button class="btn btn-primary BtnForm" data-tooltip="2" data-bs-toggle="modal" data-bs-target="#PatientHistory">سوابق بیمار</button>
+                    </div>
+                    <!-- Prescription Section -->
+                    <div class="inline InlineButton">
+                        <button class="btn btn-primary BtnForm" type=" " disabled>گواهی پزشکی</button>
+                        <button class="btn btn-primary BtnForm" style="background: #2c3875;" type=" ">ثبت ویزیت</button>
                     </div>
                 </form>
             </div>
         </div>
     </div>
+
     <!-- Acceptance -->
     <div id="AcceptanceSection" class="tabcontent ">
         <div class="container-fluid ">
