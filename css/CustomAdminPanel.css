@@ -6,39 +6,53 @@
     flex-direction: row;
     flex-wrap: wrap;
     align-content: center;
-    justify-content: center;
+    justify-content: flex-start;
     margin-top: 2rem;
 }
 
 .FormInline2 {
     display: flex;
     align-items: stretch;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
     align-content: center;
-    justify-content: center;
+    justify-content: flex-start;
     margin-top: 2rem;
 }
 
 .form-control {
     border-radius: 7px;
     direction: rtl;
-    border: unset;
-    background: #e5e5e5ed;
+    background: #ffffff;
 }
 
-.inline {
+.inline {}
+
+.InlineButton {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: stretch;
     align-content: stretch;
     margin-bottom: 2rem;
 }
 
+.InlineSms {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    align-content: flex-start;
+}
+
 .mb-3 {
-    margin: auto;
+    margin: 0px 20px 20px 0px;
+}
+
+.form-select-lg {
+    font-size: 1rem;
 }
 
 .Pointers {
@@ -53,20 +67,28 @@
 
 .BtnForm {
     display: flex;
-    margin: 0.1rem;
+    margin: 0.6rem 1.1rem 0rem 0.2rem;
     color: #ffffff;
-    max-height: 40px;
     flex-direction: column;
     flex-wrap: wrap;
     min-width: 244px;
-    align-items: center;
+    height: 50px;
+    align-items: stretch;
+    justify-content: space-around;
+    align-content: stretch;
+}
+
+.form-floating>.form-control:focus,
+.form-floating>.form-control:not(:placeholder-shown) {
+    padding-top: 1.9rem;
+    padding-bottom: 0.375rem;
 }
 
 
 /* Inputs class */
 
 .Gender {
-    width: 15rem;
+    width: 15.2rem;
     height: 56px;
 }
 
@@ -103,7 +125,7 @@
 }
 
 .Loginlabel {
-    color: #3498db;
+    color: #3d5af1;
     font-size: 1.3em;
     justify-content: center;
     display: flex;
@@ -133,7 +155,7 @@
     justify-content: center;
     display: block;
     color: #fff;
-    background: #3498db;
+    background: #3d5af1;
     font-size: 1em;
     font-weight: bold;
     margin-top: 20px;
@@ -194,7 +216,7 @@
 }
 
 .ForgetPass label {
-    color: #e74c3c;
+    color: #32a687;
     transform: scale(.8);
     margin-top: 63px;
     font-weight: normal;
@@ -217,9 +239,14 @@
 
 /* Table */
 
-.TableCard {
-    height: 815px;
-    overflow-y: auto;
+table {
+    color: #4d4d4d!important;
+}
+
+.TableCard tr:hover {
+    transition: 0.3s;
+    color: #ffffff;
+    background: #a7a7a7;
 }
 
 .TableCard th:nth-child(3),
@@ -243,8 +270,7 @@
     text-align: center;
 }
 
-.SmsTableCard td:nth-child(5),
-.SmsTableCard td:nth-child(6) {
+.SmsTableCard td:nth-child(5) {
     text-align: center;
 }
 
@@ -254,6 +280,27 @@
 
 ::-webkit-scrollbar {
     width: 10px;
+}
+
+.paginationLayout {
+    all: unset!important;
+    margin-right: 1.1rem!important;
+}
+
+legend {
+    background: #3d5af1;
+    color: white;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    margin-bottom: 0.5rem;
+    margin-top: -33px;
+    border-radius: 6px;
+    font-size: calc(1.275rem + .3vw);
+    line-height: inherit;
+    align-items: center;
+    flex-direction: row;
+    padding-right: 18px;
 }
 
 
@@ -276,12 +323,10 @@
 /* Handle on hover */
 
  ::-webkit-scrollbar-thumb:hover {
-    background: #351eff;
+    background: #193df1;
 }
 
 .TableGui thead th {
-    position: sticky;
-    top: 0;
     background-color: #3d5af1;
     color: #fff;
 }
@@ -316,3 +361,6 @@
 .BtnFill {
     width: -webkit-fill-available;
 }
+
+
+/* Tabs */
