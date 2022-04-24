@@ -127,12 +127,15 @@
     </nav>
     <!-- Patient History Modal -->
     <div class="modal fade" id="PatientHistory">
-        <div class="modal-dialog" style="max-width: 100%;">
+        <div class="modal-dialog" style="max-width: 70%;" id="ModalDialog">
             <div class="modal-content">
                 <div class="modal-body ">
                     <div class="PatientHistoryModal">
                         <legend class="PatientHistoryModallegend">فیلتر بر اساس</legend>
-                        <input class=" Gender Logininput" type="tel" id="phone" name="phone" placeholder="نام پزشک" pattern="[0]{1}[9]{1}[0-9]{9}" required>
+                        <div class="form-floating mb-3">
+                            <input type="email" class="form-control Qbime" id="floatingInput" placeholder="name@example.com">
+                            <label for="floatingInput">نام پزشک</label>
+                        </div>
                         <select class="form-select form-select-lg mb-3 Gender" aria-label=".form-select-lg example">
                             <option value="1">نوع تجویز</option>
                             <option value="2">ویزیت</option>
