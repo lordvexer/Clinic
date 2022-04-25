@@ -1,6 +1,6 @@
 // Tabs
 $('#btn-nav-previous').click(function() {
-    $(".menu-inner-box").animate({ scrollLeft: "+=100px" });
+    $(".menu-inner-box").animate({ scrollLeft: "-=100px" });
 });
 
 $('#btn-nav-next').click(function() {
