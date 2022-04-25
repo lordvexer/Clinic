@@ -198,7 +198,8 @@
                                 </ul>
                             </nav>
                             <div class="inline InlineButton">
-                                <button class="btn btn-primary BtnForm" style="min-width: 168px;" type="reset ">درج در لیست</button>
+                                <button class="btn btn-primary BtnForm" style="min-width: 168px;" type="reset ">درج در
+                                    لیست</button>
                             </div>
                         </div>
                         <div class="card TableCard ">
@@ -478,6 +479,221 @@
                     </div>
                 </form>
             </div>
+
+            <!-- Visit Table Menu -->
+            <div class="card">
+                <nav id="menu-container" class="arrow">
+                    <div id="btn-nav-previous" style="fill: #FFF">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+                            <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z" />
+                            <path d="M0 0h24v24H0z" fill="none" />
+                        </svg>
+                    </div>
+                    <div id="btn-nav-next">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+                            <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" />
+                            <path d="M0 0h24v24H0z" fill="none" />
+                        </svg>
+                    </div>
+                    <div class="menu-inner-box">
+                        <div class="menu">
+                            <a class="menu-item active" onclick="ChangeSection(event, 'Visit')">ویزیت</a>
+                            <a class="menu-item" onclick="ChangeSection(event, 'Drug')">دارو</a>
+                            <a class="menu-item" onclick="ChangeSection(event, 'MedicalService')">خدمات پزشکی</a>
+                            <a class="menu-item" onclick="ChangeSection(event, 'Lab')">آزمایشگاه</a>
+                            <a class="menu-item" onclick="ChangeSection(event, 'Radio')">رادیولوژی</a>
+                            <a class="menu-item" onclick="ChangeSection(event, 'CtScan')">CT Scan</a>
+                            <a class="menu-item" onclick="ChangeSection(event, 'MRI')">MRI</a>
+                            <a class="menu-item" onclick="ChangeSection(event, 'Sonographi')">سونوگرافی</a>
+                            <a class="menu-item" onclick="ChangeSection(event, 'physiotherapy')">فیزیوتراپی</a>
+                            <a class="menu-item" onclick="ChangeSection(event, 'OderMedService')">سایر خدمات
+                                پاراکلینیک</a>
+                            <a class="menu-item" onclick="ChangeSection(event, 'RedirectServices')">خدمات ارجاعی</a>
+                        </div>
+                    </div>
+                </nav>
+                <!-- Visit Table Inside Menu -->
+                <div id="Visit" class="tabcontent active" style="display: block;">
+                    <form class="FormInline">
+                        <div class="form-floating mb-3">
+                            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                            <label for="floatingInput"> شماره پرونده</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="email" class="form-control Qbime" id="floatingInput" placeholder="name@example.com">
+                            <label for="floatingInput">کد سریع بیمه</label>
+                        </div>
+                        <select class="form-select form-select-lg mb-3 Gender" aria-label=".form-select-lg example">
+                        <option value="1">بیمه گر</option>
+                        <option value="2">بدون بیمه</option>
+                        <option value="3">تامین</option>
+                        <option value="4">...</option>
+                    </select>
+                        <div class="form-floating mb-3">
+                            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                            <label for="floatingInput">شماره بیمه</label>
+                        </div>
+                        <select class="form-select form-select-lg mb-3 Gender" aria-label=".form-select-lg example">
+                        <option value="1">بیمه تکمیلی</option>
+                        <option value="2">سامان</option>
+                        <option value="3">ایران</option>
+                        <option value="4">...</option>
+                    </select>
+                        <div class="form-floating mb-3">
+                            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                            <label for="floatingInput"> نام</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                            <label for="floatingInput"> نام خانوادگی</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                            <label for="floatingInput"> نام پدر</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                            <label for="floatingInput"> کد ملی</label>
+                        </div>
+                        <select class="form-select form-select-lg mb-3 Gender" aria-label=".form-select-lg example">
+                        <option value="1">مرد</option>
+                        <option value="2">زن</option>
+                        <option value="3">سایر</option>
+                    </select>
+                        <div class="form-floating mb-3">
+                            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                            <label for="floatingInput"> شغل</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                            <label for="floatingInput"> تلفن ثابت</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                            <label for="floatingInput"> تلفن همراه</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control Address" row="3" id="floatingInput" placeholder="name@example.com">
+                            <label for="floatingInput"> آدرس</label>
+                        </div>
+                    </form>
+                    <div class="inline InlineButton">
+                        <button class="btn btn-primary BtnForm" type="submit">ثبت</button>
+                        <button class="btn btn-primary BtnForm" type="reset ">ریست</button>
+                        <button class="btn btn-primary BtnForm" type="reset ">بیشتر</button>
+                    </div>
+                </div>
+                <div id="Drug" class="tabcontent ">
+                    <form class="FormInline">
+                        test
+                    </form>
+                    <div class="inline InlineButton">
+                        <button class="btn btn-primary BtnForm" type="submit">ثبت</button>
+                        <button class="btn btn-primary BtnForm" type="reset ">نسخه پر استفاده</button>
+                        <button class="btn btn-primary BtnForm" type="reset ">چاپ</button>
+                        <button class="btn btn-primary BtnForm" type="reset ">انصراف</button>
+                    </div>
+                </div>
+                <div id="MedicalService" class="tabcontent ">
+                    <form class="FormInline">
+                        test
+                    </form>
+                    <div class="inline InlineButton">
+                        <button class="btn btn-primary BtnForm" type="submit">ثبت</button>
+                        <button class="btn btn-primary BtnForm" type="reset ">نسخه پر استفاده</button>
+                        <button class="btn btn-primary BtnForm" type="reset ">چاپ</button>
+                        <button class="btn btn-primary BtnForm" type="reset ">انصراف</button>
+                    </div>
+                </div>
+                <div id="Lab" class="tabcontent ">
+                    <form class="FormInline">
+                        test
+                    </form>
+                    <div class="inline InlineButton">
+                        <button class="btn btn-primary BtnForm" type="submit">ثبت</button>
+                        <button class="btn btn-primary BtnForm" type="reset ">نسخه پر استفاده</button>
+                        <button class="btn btn-primary BtnForm" type="reset ">چاپ</button>
+                        <button class="btn btn-primary BtnForm" type="reset ">انصراف</button>
+                    </div>
+                </div>
+                <div id="Radio" class="tabcontent ">
+                    <form class="FormInline">
+                        test
+                    </form>
+                    <div class="inline InlineButton">
+                        <button class="btn btn-primary BtnForm" type="submit">ثبت</button>
+                        <button class="btn btn-primary BtnForm" type="reset ">نسخه پر استفاده</button>
+                        <button class="btn btn-primary BtnForm" type="reset ">چاپ</button>
+                        <button class="btn btn-primary BtnForm" type="reset ">انصراف</button>
+                    </div>
+                </div>
+                <div id="CtScan" class="tabcontent ">
+                    <form class="FormInline">
+                        test
+                    </form>
+                    <div class="inline InlineButton">
+                        <button class="btn btn-primary BtnForm" type="submit">ثبت</button>
+                        <button class="btn btn-primary BtnForm" type="reset ">نسخه پر استفاده</button>
+                        <button class="btn btn-primary BtnForm" type="reset ">چاپ</button>
+                        <button class="btn btn-primary BtnForm" type="reset ">انصراف</button>
+                    </div>
+                </div>
+                <div id="MRI" class="tabcontent ">
+                    <form class="FormInline">
+                        test
+                    </form>
+                    <div class="inline InlineButton">
+                        <button class="btn btn-primary BtnForm" type="submit">ثبت</button>
+                        <button class="btn btn-primary BtnForm" type="reset ">نسخه پر استفاده</button>
+                        <button class="btn btn-primary BtnForm" type="reset ">چاپ</button>
+                        <button class="btn btn-primary BtnForm" type="reset ">انصراف</button>
+                    </div>
+                </div>
+                <div id="Sonographi" class="tabcontent ">
+                    <form class="FormInline">
+                        test
+                    </form>
+                    <div class="inline InlineButton">
+                        <button class="btn btn-primary BtnForm" type="submit">ثبت</button>
+                        <button class="btn btn-primary BtnForm" type="reset ">نسخه پر استفاده</button>
+                        <button class="btn btn-primary BtnForm" type="reset ">چاپ</button>
+                        <button class="btn btn-primary BtnForm" type="reset ">انصراف</button>
+                    </div>
+                </div>
+                <div id="physiotherapy" class="tabcontent ">
+                    <form class="FormInline">
+                        test
+                    </form>
+                    <div class="inline InlineButton">
+                        <button class="btn btn-primary BtnForm" type="submit">ثبت</button>
+                        <button class="btn btn-primary BtnForm" type="reset ">نسخه پر استفاده</button>
+                        <button class="btn btn-primary BtnForm" type="reset ">چاپ</button>
+                        <button class="btn btn-primary BtnForm" type="reset ">انصراف</button>
+                    </div>
+                </div>
+                <div id="OderMedService" class="tabcontent ">
+                    <form class="FormInline">
+                        test
+                    </form>
+                    <div class="inline InlineButton">
+                        <button class="btn btn-primary BtnForm" type="submit">ثبت</button>
+                        <button class="btn btn-primary BtnForm" type="reset ">نسخه پر استفاده</button>
+                        <button class="btn btn-primary BtnForm" type="reset ">چاپ</button>
+                        <button class="btn btn-primary BtnForm" type="reset ">انصراف</button>
+                    </div>
+                </div>
+                <div id="RedirectServices" class="tabcontent ">
+                    <form class="FormInline">
+                        test
+                    </form>
+                    <div class="inline InlineButton">
+                        <button class="btn btn-primary BtnForm" type="submit">ثبت</button>
+                        <button class="btn btn-primary BtnForm" type="reset ">نسخه پر استفاده</button>
+                        <button class="btn btn-primary BtnForm" type="reset ">چاپ</button>
+                        <button class="btn btn-primary BtnForm" type="reset ">انصراف</button>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -583,168 +799,6 @@
                             <th>پرونده</th>
                         </thead>
                         <tbody>
-                            <tr>
-                                <th scope="row" class="scope">صادق</th>
-                                <td>تقیپور</td>
-                                <td>0912000000</td>
-                                <td><a href="#" class="btn btn-primary BtnFill BtnFill">مشاهده</a></td>
-                            </tr>
-                            <tr>
-                                <th scope="row" class="scope">حشمت</th>
-                                <td>سرابی</td>
-                                <td>0912000000</td>
-                                <td><a href="#" class="btn btn-primary BtnFill">مشاهده</a></td>
-                            </tr>
-                            <tr>
-                                <th scope="row" class="scope">قباد</th>
-                                <td>آسی</td>
-                                <td>0912000000</td>
-                                <td><a href="#" class="btn btn-primary BtnFill">مشاهده</a></td>
-                            </tr>
-                            <tr>
-                                <th scope="row" class="scope">میلاد</th>
-                                <td>صادقی</td>
-                                <td>0912000000</td>
-                                <td><a href="#" class="btn btn-primary BtnFill">مشاهده</a></td>
-                            </tr>
-                            <tr>
-                                <th scope="row" class="scope">نفیسه</th>
-                                <td>خاموش</td>
-                                <td>0912000000</td>
-                                <td><a href="#" class="btn btn-primary BtnFill">مشاهده</a></td>
-                            </tr>
-                            <tr>
-                                <th scope="row" class="scope">صادق</th>
-                                <td>تقیپور</td>
-                                <td>0912000000</td>
-                                <td><a href="#" class="btn btn-primary BtnFill">مشاهده</a></td>
-                            </tr>
-                            <tr>
-                                <th scope="row" class="scope">حشمت</th>
-                                <td>سرابی</td>
-                                <td>0912000000</td>
-                                <td><a href="#" class="btn btn-primary BtnFill">مشاهده</a></td>
-                            </tr>
-                            <tr>
-                                <th scope="row" class="scope">قباد</th>
-                                <td>آسی</td>
-                                <td>0912000000</td>
-                                <td><a href="#" class="btn btn-primary BtnFill">مشاهده</a></td>
-                            </tr>
-                            <tr>
-                                <th scope="row" class="scope">میلاد</th>
-                                <td>صادقی</td>
-                                <td>0912000000</td>
-                                <td><a href="#" class="btn btn-primary BtnFill">مشاهده</a></td>
-                            </tr>
-                            <tr>
-                                <th scope="row" class="scope">نفیسه</th>
-                                <td>خاموش</td>
-                                <td>0912000000</td>
-                                <td><a href="#" class="btn btn-primary BtnFill">مشاهده</a></td>
-                            </tr>
-                            <tr>
-                                <th scope="row" class="scope">صادق</th>
-                                <td>تقیپور</td>
-                                <td>0912000000</td>
-                                <td><a href="#" class="btn btn-primary BtnFill">مشاهده</a></td>
-                            </tr>
-                            <tr>
-                                <th scope="row" class="scope">حشمت</th>
-                                <td>سرابی</td>
-                                <td>0912000000</td>
-                                <td><a href="#" class="btn btn-primary BtnFill">مشاهده</a></td>
-                            </tr>
-                            <tr>
-                                <th scope="row" class="scope">قباد</th>
-                                <td>آسی</td>
-                                <td>0912000000</td>
-                                <td><a href="#" class="btn btn-primary BtnFill">مشاهده</a></td>
-                            </tr>
-                            <tr>
-                                <th scope="row" class="scope">میلاد</th>
-                                <td>صادقی</td>
-                                <td>0912000000</td>
-                                <td><a href="#" class="btn btn-primary BtnFill">مشاهده</a></td>
-                            </tr>
-                            <tr>
-                                <th scope="row" class="scope">نفیسه</th>
-                                <td>خاموش</td>
-                                <td>0912000000</td>
-                                <td><a href="#" class="btn btn-primary BtnFill">مشاهده</a></td>
-                            </tr>
-                            <tr>
-                                <th scope="row" class="scope">صادق</th>
-                                <td>تقیپور</td>
-                                <td>0912000000</td>
-                                <td><a href="#" class="btn btn-primary BtnFill">مشاهده</a></td>
-                            </tr>
-                            <tr>
-                                <th scope="row" class="scope">حشمت</th>
-                                <td>سرابی</td>
-                                <td>0912000000</td>
-                                <td><a href="#" class="btn btn-primary BtnFill">مشاهده</a></td>
-                            </tr>
-                            <tr>
-                                <th scope="row" class="scope">قباد</th>
-                                <td>آسی</td>
-                                <td>0912000000</td>
-                                <td><a href="#" class="btn btn-primary BtnFill">مشاهده</a></td>
-                            </tr>
-                            <tr>
-                                <th scope="row" class="scope">میلاد</th>
-                                <td>صادقی</td>
-                                <td>0912000000</td>
-                                <td><a href="#" class="btn btn-primary BtnFill">مشاهده</a></td>
-                            </tr>
-                            <tr>
-                                <th scope="row" class="scope">نفیسه</th>
-                                <td>خاموش</td>
-                                <td>0912000000</td>
-                                <td><a href="#" class="btn btn-primary BtnFill">مشاهده</a></td>
-                            </tr>
-                            <tr>
-                                <th scope="row" class="scope">صادق</th>
-                                <td>تقیپور</td>
-                                <td>0912000000</td>
-                                <td><a href="#" class="btn btn-primary BtnFill">مشاهده</a></td>
-                            </tr>
-                            <tr>
-                                <th scope="row" class="scope">حشمت</th>
-                                <td>سرابی</td>
-                                <td>0912000000</td>
-                                <td><a href="#" class="btn btn-primary BtnFill">مشاهده</a></td>
-                            </tr>
-                            <tr>
-                                <th scope="row" class="scope">قباد</th>
-                                <td>آسی</td>
-                                <td>0912000000</td>
-                                <td><a href="#" class="btn btn-primary BtnFill">مشاهده</a></td>
-                            </tr>
-                            <tr>
-                                <th scope="row" class="scope">میلاد</th>
-                                <td>صادقی</td>
-                                <td>0912000000</td>
-                                <td><a href="#" class="btn btn-primary BtnFill">مشاهده</a></td>
-                            </tr>
-                            <tr>
-                                <th scope="row" class="scope">نفیسه</th>
-                                <td>خاموش</td>
-                                <td>0912000000</td>
-                                <td><a href="#" class="btn btn-primary BtnFill">مشاهده</a></td>
-                            </tr>
-                            <tr>
-                                <th scope="row" class="scope">صادق</th>
-                                <td>تقیپور</td>
-                                <td>0912000000</td>
-                                <td><a href="#" class="btn btn-primary BtnFill">مشاهده</a></td>
-                            </tr>
-                            <tr>
-                                <th scope="row" class="scope">حشمت</th>
-                                <td>سرابی</td>
-                                <td>0912000000</td>
-                                <td><a href="#" class="btn btn-primary BtnFill">مشاهده</a></td>
-                            </tr>
                             <tr>
                                 <th scope="row" class="scope">قباد</th>
                                 <td>آسی</td>
