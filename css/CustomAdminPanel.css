@@ -98,6 +98,10 @@
     height: 10rem;
 }
 
+.input-group {
+    width: 15.2rem;
+}
+
 
 /* Patient History Modal */
 
@@ -409,7 +413,7 @@ table {
 nav#menu-container {
     background: #3d5af1;
     position: relative;
-    width: 100%;
+    /* width: 100%; */
     height: 56px;
     border-radius: 6px;
     padding: unset;
@@ -454,7 +458,7 @@ nav#menu-container {
     padding: 0;
     margin: 0;
     list-style-type: none;
-    display: block;
+    /* display: block; */
     text-align: center;
 }
 
@@ -467,7 +471,6 @@ nav#menu-container {
     line-height: 57px;
     text-decoration: none;
     text-align: center;
-    white-space: no-wrap;
     cursor: pointer;
 }
 
@@ -483,7 +486,6 @@ nav#menu-container {
         display: none;
     }
     .menu-inner-box {
-        width: 100%;
         overflow-x: auto;
         padding: unset;
     }
