@@ -133,8 +133,8 @@
                     <div class="PatientHistoryModal">
                         <legend class="PatientHistoryModallegend">فیلتر بر اساس</legend>
                         <div class="form-floating mb-3">
-                            <input type="email" class="form-control Qbime" id="floatingInput" placeholder="name@example.com">
-                            <label for="floatingInput">نام پزشک</label>
+                            <input type="email" class="form-control Qbime" id="FloatingDoctorName" placeholder="name@example.com">
+                            <label for="FloatingDoctorName">نام پزشک</label>
                         </div>
                         <select class="form-select form-select-lg mb-3 Gender" aria-label=".form-select-lg example">
                             <option value="1">نوع تجویز</option>
@@ -246,7 +246,7 @@
                                 <label class="Loginlabel" for="chk" aria-hidden="true"> تشکیل پرونده
                                 </label>
                                 <input class="Logininput" type="tel" id="phone" name="phone" placeholder="تلفن همراه" pattern="[0]{1}[9]{1}[0-9]{9}" required>
-                                <input class="Logininput" type="tel" id="phone" name="phone" placeholder="کد ملی" pattern="[0]{1}[9]{1}[0-9]{9}" required>
+                                <input class="Logininput" type="tel" id="MelliCode" name="phone" placeholder="کد ملی" pattern="[0]{1}[9]{1}[0-9]{9}" required>
                                 <button class="Loginbutton">تکمیل اطلاعات</button>
                             </form>
                         </div>
@@ -271,12 +271,12 @@
             <div class="card">
                 <form class="FormInline">
                     <div class="form-floating mb-3">
-                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                        <label for="floatingInput"> شماره پرونده</label>
+                        <input type="email" class="form-control" id="FloatingPatientCaseNumber" placeholder="name@example.com">
+                        <label for="FloatingPatientCaseNumber"> شماره پرونده</label>
                     </div>
                     <div class="form-floating mb-3">
-                        <input type="email" class="form-control Qbime" id="floatingInput" placeholder="name@example.com">
-                        <label for="floatingInput">کد سریع بیمه</label>
+                        <input type="email" class="form-control Qbime" id="FloatingPatientQuickInsuranceCode" placeholder="name@example.com">
+                        <label for="FloatingPatientQuickInsuranceCode">کد سریع بیمه</label>
                     </div>
                     <select class="form-select form-select-lg mb-3 Gender" aria-label=".form-select-lg example">
                         <option value="1">بیمه گر</option>
@@ -285,8 +285,8 @@
                         <option value="4">...</option>
                     </select>
                     <div class="form-floating mb-3">
-                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                        <label for="floatingInput">شماره بیمه</label>
+                        <input type="email" class="form-control" id="FloatingPatientInsuranceCode" placeholder="name@example.com">
+                        <label for="FloatingPatientInsuranceCode">شماره بیمه</label>
                     </div>
                     <select class="form-select form-select-lg mb-3 Gender" aria-label=".form-select-lg example">
                         <option value="1">بیمه تکمیلی</option>
@@ -295,20 +295,20 @@
                         <option value="4">...</option>
                     </select>
                     <div class="form-floating mb-3">
-                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                        <label for="floatingInput"> نام</label>
+                        <input type="email" class="form-control" id="FloatingPatientFirstName" placeholder="name@example.com">
+                        <label for="FloatingPatientFirstName"> نام</label>
                     </div>
                     <div class="form-floating mb-3">
-                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                        <label for="floatingInput"> نام خانوادگی</label>
+                        <input type="email" class="form-control" id="FloatingPatientLastName" placeholder="name@example.com">
+                        <label for="FloatingPatientLastName"> نام خانوادگی</label>
                     </div>
                     <div class="form-floating mb-3">
-                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                        <label for="floatingInput"> نام پدر</label>
+                        <input type="email" class="form-control" id="FloatingPatientFatherName" placeholder="name@example.com">
+                        <label for="FloatingPatientFatherName"> نام پدر</label>
                     </div>
                     <div class="form-floating mb-3">
-                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                        <label for="floatingInput"> کد ملی</label>
+                        <input type="email" class="form-control" id="FloatingPatientNationalCode" placeholder="name@example.com">
+                        <label for="FloatingPatientNationalCode"> کد ملی</label>
                     </div>
                     <select class="form-select form-select-lg mb-3 Gender" aria-label=".form-select-lg example">
                         <option value="1">مرد</option>
@@ -316,20 +316,20 @@
                         <option value="3">سایر</option>
                     </select>
                     <div class="form-floating mb-3">
-                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                        <label for="floatingInput"> شغل</label>
+                        <input type="email" class="form-control" id="FloatingPatientJob" placeholder="name@example.com">
+                        <label for="FloatingPatientJob"> شغل</label>
                     </div>
                     <div class="form-floating mb-3">
-                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                        <label for="floatingInput"> تلفن ثابت</label>
+                        <input type="email" class="form-control" id="FloatingPatientHomeNumber" placeholder="name@example.com">
+                        <label for="FloatingPatientHomeNumber"> تلفن ثابت</label>
                     </div>
                     <div class="form-floating mb-3">
-                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                        <label for="floatingInput"> تلفن همراه</label>
+                        <input type="email" class="form-control" id="FloatingPatientPhoneNumber" placeholder="name@example.com">
+                        <label for="FloatingPatientPhoneNumber"> تلفن همراه</label>
                     </div>
                     <div class="form-floating mb-3">
-                        <input type="text" class="form-control Address" row="3" id="floatingInput" placeholder="name@example.com">
-                        <label for="floatingInput"> آدرس</label>
+                        <input type="text" class="form-control Address" row="3" id="FloatingPatientAddress" placeholder="name@example.com">
+                        <label for="FloatingPatientAddress"> آدرس</label>
                     </div>
                 </form>
                 <div class="inline InlineButton">
@@ -405,56 +405,56 @@
                 <form class="FormInline">
                     <legend class="Prescriptionlegend">اطلاعات بیمار</legend>
                     <div class="form-floating mb-3">
-                        <input type="email" class="form-control" id="floatingInput" value="222222" disabled>
-                        <label for="floatingInput"> شماره پرونده</label>
+                        <input type="email" class="form-control" id="FloatingCaseNumber" value="222222" disabled>
+                        <label for="FloatingCaseNumber"> شماره پرونده</label>
                     </div>
                     <div class="form-floating mb-3">
-                        <input type="email" class="form-control" id="floatingInput" value="بیمه ایران" disabled>
-                        <label for="floatingInput">بیمه گر</label>
+                        <input type="email" class="form-control" id="FloatingInsurance" value="بیمه ایران" disabled>
+                        <label for="FloatingInsurance">بیمه گر</label>
                     </div>
                     <div class="form-floating mb-3">
-                        <input type="email" class="form-control" id="floatingInput" value="ناصر" disabled>
-                        <label for="floatingInput">نام</label>
+                        <input type="email" class="form-control" id="FloatingFirstName" value="ناصر" disabled>
+                        <label for="FloatingFirstName">نام</label>
                     </div>
                     <div class="form-floating mb-3">
-                        <input type="email" class="form-control" id="floatingInput" value="عبدی" disabled>
-                        <label for="floatingInput"> نام خانوادگی</label>
+                        <input type="email" class="form-control" id="FloatingLastName" value="عبدی" disabled>
+                        <label for="FloatingLastName"> نام خانوادگی</label>
                     </div>
                     <div class="form-floating mb-3">
-                        <input type="email" class="form-control" id="floatingInput" value="مرد" disabled>
-                        <label for="floatingInput">جنسیت</label>
+                        <input type="email" class="form-control" id="FloatingGen" value="مرد" disabled>
+                        <label for="FloatingGen">جنسیت</label>
                     </div>
                     <div class="form-floating mb-3">
-                        <input type="email" class="form-control" id="floatingInput" value="1359/12/01" disabled>
-                        <label for="floatingInput">تاریخ تولد</label>
+                        <input type="email" class="form-control" id="FloatingBdate" value="1359/12/01" disabled>
+                        <label for="FloatingBdate">تاریخ تولد</label>
                     </div>
                     <div class="form-floating mb-3">
-                        <input type="email" class="form-control" id="floatingInput" value="1401/12/01" disabled>
-                        <label for="floatingInput">تاریخ اعتبار بیمه</label>
+                        <input type="email" class="form-control" id="FloatingInsuranceDate" value="1401/12/01" disabled>
+                        <label for="FloatingInsuranceDate">تاریخ اعتبار بیمه</label>
                     </div>
                     <div class="form-floating mb-3">
-                        <input type="email" class="form-control" id="floatingInput" value="اجباری" disabled>
-                        <label for="floatingInput">نوع بیمه</label>
+                        <input type="email" class="form-control" id="FloatingInsuranceType" value="اجباری" disabled>
+                        <label for="FloatingInsuranceType">نوع بیمه</label>
                     </div>
                     <div class="form-floating mb-3">
-                        <input type="email" class="form-control" id="floatingInput" value="1400/12/01" disabled>
-                        <label for="floatingInput">تاریخ نسخه</label>
+                        <input type="email" class="form-control" id="FloatingPrescription" value="1400/12/01" disabled>
+                        <label for="FloatingPrescription">تاریخ نسخه</label>
                     </div>
                     <div class="form-floating mb-3">
-                        <input type="email" class="form-control" id="floatingInput" value="1401/12/01" disabled>
-                        <label for="floatingInput">تاریخ اعتبار نسخه</label>
+                        <input type="email" class="form-control" id="FloatingDate" value="1401/12/01" disabled>
+                        <label for="FloatingDate">تاریخ اعتبار نسخه</label>
                     </div>
                     <div class="form-floating mb-3">
-                        <input type="email" class="form-control" id="floatingInput" value="-" disabled>
-                        <label for="floatingInput">دلیل ارجاع</label>
+                        <input type="email" class="form-control" id="FloatingRedirectReason" value="-" disabled>
+                        <label for="FloatingRedirectReason">دلیل ارجاع</label>
                     </div>
                     <div class="form-floating mb-3">
-                        <input type="email" class="form-control" id="floatingInput" value="1" disabled>
-                        <label for="floatingInput">بیمار دارای پرونده</label>
+                        <input type="email" class="form-control" id="FloatingHaveCase" value="1" disabled>
+                        <label for="FloatingHaveCase">بیمار دارای پرونده</label>
                     </div>
                     <div class="form-floating mb-3">
-                        <input type="email" class="form-control" id="floatingInput" value="سرطان لنف" disabled>
-                        <label for="floatingInput">دارای بیماری مهم</label>
+                        <input type="email" class="form-control" id="FloatingHaveImportantIssue" value="سرطان لنف" disabled>
+                        <label for="FloatingHaveImportantIssue">دارای بیماری مهم</label>
                     </div>
                     <select class="form-select form-select-lg mb-3 Gender" aria-label=".form-select-lg example">
                         <option value="1">تشخیص اولیه</option>
@@ -516,12 +516,12 @@
                 <div id="Visit" class="tabcontent active" style="display: block;">
                     <form class="FormInline">
                         <div class="form-floating mb-3">
-                            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                            <label for="floatingInput"> شماره پرونده</label>
+                            <input type="email" class="form-control" id="FloatingVisitTableCaseNumber" placeholder="name@example.com">
+                            <label for="FloatingVisitTableCaseNumber"> شماره پرونده</label>
                         </div>
                         <div class="form-floating mb-3">
-                            <input type="email" class="form-control Qbime" id="floatingInput" placeholder="name@example.com">
-                            <label for="floatingInput">کد سریع بیمه</label>
+                            <input type="email" class="form-control Qbime" id="FloatingVisitTableQuickInsuranceCode" placeholder="name@example.com">
+                            <label for="FloatingVisitTableQuickInsuranceCode">کد سریع بیمه</label>
                         </div>
                         <select class="form-select form-select-lg mb-3 Gender" aria-label=".form-select-lg example">
                         <option value="1">بیمه گر</option>
@@ -530,8 +530,8 @@
                         <option value="4">...</option>
                     </select>
                         <div class="form-floating mb-3">
-                            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                            <label for="floatingInput">شماره بیمه</label>
+                            <input type="email" class="form-control" id="FloatingVisitTableInsuranceCode" placeholder="name@example.com">
+                            <label for="FloatingVisitTableInsuranceCode">شماره بیمه</label>
                         </div>
                         <select class="form-select form-select-lg mb-3 Gender" aria-label=".form-select-lg example">
                         <option value="1">بیمه تکمیلی</option>
@@ -540,20 +540,20 @@
                         <option value="4">...</option>
                     </select>
                         <div class="form-floating mb-3">
-                            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                            <label for="floatingInput"> نام</label>
+                            <input type="email" class="form-control" id="FloatingVisitTableFirsName" placeholder="name@example.com">
+                            <label for="FloatingVisitTableFirsName"> نام</label>
                         </div>
                         <div class="form-floating mb-3">
-                            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                            <label for="floatingInput"> نام خانوادگی</label>
+                            <input type="email" class="form-control" id="FloatingVisitTableLastName" placeholder="name@example.com">
+                            <label for="FloatingVisitTableLastName"> نام خانوادگی</label>
                         </div>
                         <div class="form-floating mb-3">
-                            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                            <label for="floatingInput"> نام پدر</label>
+                            <input type="email" class="form-control" id="FloatingVisitTableFatherName" placeholder="name@example.com">
+                            <label for="FloatingVisitTableFatherName"> نام پدر</label>
                         </div>
                         <div class="form-floating mb-3">
-                            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                            <label for="floatingInput"> کد ملی</label>
+                            <input type="email" class="form-control" id="FloatingVisitTableNationalCode" placeholder="name@example.com">
+                            <label for="FloatingVisitTableNationalCode"> کد ملی</label>
                         </div>
                         <select class="form-select form-select-lg mb-3 Gender" aria-label=".form-select-lg example">
                         <option value="1">مرد</option>
@@ -561,20 +561,20 @@
                         <option value="3">سایر</option>
                     </select>
                         <div class="form-floating mb-3">
-                            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                            <label for="floatingInput"> شغل</label>
+                            <input type="email" class="form-control" id="FloatingVisitTableJob" placeholder="name@example.com">
+                            <label for="FloatingVisitTableJob"> شغل</label>
                         </div>
                         <div class="form-floating mb-3">
-                            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                            <label for="floatingInput"> تلفن ثابت</label>
+                            <input type="email" class="form-control" id="FloatingVisitTableHomeNumber" placeholder="name@example.com">
+                            <label for="FloatingVisitTableHomeNumber"> تلفن ثابت</label>
                         </div>
                         <div class="form-floating mb-3">
-                            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                            <label for="floatingInput"> تلفن همراه</label>
+                            <input type="email" class="form-control" id="FloatingVisitTablePhoneNamber" placeholder="name@example.com">
+                            <label for="FloatingVisitTablePhoneNamber"> تلفن همراه</label>
                         </div>
                         <div class="form-floating mb-3">
-                            <input type="text" class="form-control Address" row="3" id="floatingInput" placeholder="name@example.com">
-                            <label for="floatingInput"> آدرس</label>
+                            <input type="text" class="form-control Address" row="3" id="FloatingVisitTableAddress" placeholder="name@example.com">
+                            <label for="FloatingVisitTableAddress"> آدرس</label>
                         </div>
                     </form>
                     <div class="inline InlineButton">
@@ -703,32 +703,32 @@
             <div class="card">
                 <form class="FormInline">
                     <div class="form-floating mb-3">
-                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" disabled>
-                        <label for="floatingInput"> شماره پرونده</label>
+                        <input type="email" class="form-control" id="FloatingAcceptanceCaseNamber" placeholder="name@example.com" disabled>
+                        <label for="FloatingAcceptanceCaseNamber"> شماره پرونده</label>
                     </div>
                     <div class="form-floating mb-3">
-                        <input type="email" class="form-control Qbime" id="floatingInput" placeholder="name@example.com" disabled>
-                        <label for="floatingInput">شرکت بیمه</label>
+                        <input type="email" class="form-control Qbime" id="FloatingAcceptanceInsuranceName" placeholder="name@example.com" disabled>
+                        <label for="FloatingAcceptanceInsuranceName">شرکت بیمه</label>
                     </div>
                     <div class="form-floating mb-3">
-                        <input type="email" class="form-control Qbime" id="floatingInput" placeholder="name@example.com" disabled>
-                        <label for="floatingInput">تاریخ اعتبار بیمه</label>
+                        <input type="email" class="form-control Qbime" id="FloatingAcceptanceInsuranceDate" placeholder="name@example.com" disabled>
+                        <label for="FloatingAcceptanceInsuranceDate">تاریخ اعتبار بیمه</label>
                     </div>
                     <div class="form-floating mb-3">
-                        <input type="email" class="form-control Qbime" id="floatingInput" placeholder="name@example.com" disabled>
-                        <label for="floatingInput">کد ملی</label>
+                        <input type="email" class="form-control Qbime" id="FloatingAcceptanceNasionalCode" placeholder="name@example.com" disabled>
+                        <label for="FloatingAcceptanceNasionalCode">کد ملی</label>
                     </div>
                     <div class="form-floating mb-3">
-                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" disabled>
-                        <label for="floatingInput"> نام</label>
+                        <input type="email" class="form-control" id="FloatingAcceptanceFirstName" placeholder="name@example.com" disabled>
+                        <label for="FloatingAcceptanceFirstName"> نام</label>
                     </div>
                     <div class="form-floating mb-3">
-                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" disabled>
-                        <label for="floatingInput"> نام خانوادگی</label>
+                        <input type="email" class="form-control" id="FloatingAcceptanceLastName" placeholder="name@example.com" disabled>
+                        <label for="FloatingAcceptanceLastName"> نام خانوادگی</label>
                     </div>
                     <div class="form-floating mb-3">
-                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" disabled>
-                        <label for="floatingInput"> تلفن همراه</label>
+                        <input type="email" class="form-control" id="FloatingAcceptancePhoneNumber" placeholder="name@example.com" disabled>
+                        <label for="FloatingAcceptancePhoneNumber"> تلفن همراه</label>
                     </div>
                     <select class="form-select form-select-lg mb-3 Gender" aria-label=".form-select-lg example">
                         <option value="1">انتخاب پزشک</option>
@@ -747,25 +747,25 @@
             <div class="card2">
                 <form class="FormInline2">
                     <div class="form-floating mb-3">
-                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" disabled>
-                        <label for="floatingInput"> مبلغ کل خدمت</label>
+                        <input type="email" class="form-control" id="FloatingAcceptanceAllPrice" placeholder="name@example.com" disabled>
+                        <label for="FloatingAcceptanceAllPrice"> مبلغ کل خدمت</label>
                     </div>
                     <div class="form-floating mb-3">
-                        <input type="email" class="form-control Qbime" id="floatingInput" placeholder="name@example.com" disabled>
-                        <label for="floatingInput">مالیات</label>
+                        <input type="email" class="form-control Qbime" id="FloatingAcceptanceTaxs" placeholder="name@example.com" disabled>
+                        <label for="FloatingAcceptanceTaxs">مالیات</label>
                     </div>
                     <form class=".FormInline2">
                         <div class="form-floating mb-3">
-                            <input type="email" class="form-control Qbime" id="floatingInput" placeholder="name@example.com" disabled>
-                            <label for="floatingInput">سهم بیمه</label>
+                            <input type="email" class="form-control Qbime" id="FloatingAcceptanceInsuranceSlicePrice" placeholder="name@example.com" disabled>
+                            <label for="FloatingAcceptanceInsuranceSlicePrice">سهم بیمه</label>
                         </div>
                         <div class="form-floating mb-3">
-                            <input type="email" class="form-control Qbime" id="floatingInput" placeholder="name@example.com" disabled>
-                            <label for="floatingInput">سهم بیمه تکمیلی</label>
+                            <input type="email" class="form-control Qbime" id="FloatingAcceptanceInsurancePlusSplicePrice" placeholder="name@example.com" disabled>
+                            <label for="FloatingAcceptanceInsurancePlusSplicePrice">سهم بیمه تکمیلی</label>
                         </div>
                         <div class="form-floating mb-3">
-                            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" disabled>
-                            <label for="floatingInput"> سهم بیمار</label>
+                            <input type="email" class="form-control" id="FloatingAcceptancePatientSplicePrice" placeholder="name@example.com" disabled>
+                            <label for="FloatingAcceptancePatientSplicePrice"> سهم بیمار</label>
                         </div>
                     </form>
                     <div class="inline InlineButton">
@@ -965,8 +965,8 @@
                     <div class=" inline InlineSms">
                         <button class="btn btn-primary" type="submit">پنل ارسال پیام</button>
                         <div class="form-floating ">
-                            <input type="search " class="form-control " id="floatingInput " placeholder="جستجو ">
-                            <label for="floatingInput ">جستجو</label>
+                            <input type="search " class="form-control " id="FloatingSmsSearch " placeholder="جستجو ">
+                            <label for="FloatingSmsSearch ">جستجو</label>
                         </div>
                     </div>
                 </div>
@@ -1022,43 +1022,7 @@
         <div class="container-fluid BackGround ">
             <div class="card ">
                 <form class="FormInline ">
-                    <div class="form-floating mb-3 ">
-                        <input type="email " class="form-control Qbime " id="floatingInput " placeholder="name@example.com ">
-                        <label for="floatingInput ">شماره نظام پزشکی</label>
-                    </div>
-                    <div class="form-floating mb-3 ">
-                        <input type="email " class="form-control " id="floatingInput " placeholder="name@example.com ">
-                        <label for="floatingInput "> کد ملی</label>
-                    </div>
-                    <div class="form-floating mb-3 ">
-                        <input type="email " class="form-control " id="floatingInput " placeholder="name@example.com ">
-                        <label for="floatingInput "> نام</label>
-                    </div>
-                    <div class="form-floating mb-3 ">
-                        <input type="email " class="form-control " id="floatingInput " placeholder="name@example.com ">
-                        <label for="floatingInput "> نام خانوادگی</label>
-                    </div>
-                    <div class="form-floating mb-3 ">
-                        <input type="email " class="form-control " id="floatingInput " placeholder="name@example.com ">
-                        <label for="floatingInput "> نام پدر</label>
-                    </div>
-                    <select class="form-select form-select-lg mb-3 Gender " aria-label=".form-select-lg example ">
-                        <option value="1 ">مرد</option>
-                        <option value="2 ">زن</option>
-                        <option value="3 ">سایر</option>
-                    </select>
-                    <div class="form-floating mb-3 ">
-                        <input type="email " class="form-control " id="floatingInput " placeholder="name@example.com ">
-                        <label for="floatingInput "> تلفن ثابت</label>
-                    </div>
-                    <div class="form-floating mb-3 ">
-                        <input type="email " class="form-control " id="floatingInput " placeholder="name@example.com ">
-                        <label for="floatingInput "> تلفن همراه</label>
-                    </div>
-                    <div class="form-floating mb-3 ">
-                        <input type="text " class="form-control Address " row="3 " id="floatingInput " placeholder="name@example.com ">
-                        <label for="floatingInput "> آدرس</label>
-                    </div>
+
                 </form>
                 <div class="inline InlineButton">
                     <button class="btn btn-primary BtnForm tooltip-element tablinks " onclick="ChangeSection(event, 'DashboardSection') " type="submit ">بازگشت</button>
