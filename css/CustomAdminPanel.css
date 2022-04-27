@@ -8,6 +8,7 @@
     align-content: center;
     justify-content: flex-start;
     margin-top: 2rem;
+    margin-left: 2.2rem;
 }
 
 .FormInline2 {
@@ -18,6 +19,7 @@
     align-content: center;
     justify-content: flex-start;
     margin-top: 2rem;
+    margin-left: 2.2rem;
 }
 
 .PatientHistoryContentFit {}
@@ -27,8 +29,6 @@
     direction: rtl;
     background: #ffffff;
 }
-
-.inline {}
 
 .InlineButton {
     display: flex;
@@ -430,6 +430,7 @@ nav#menu-container {
     background: #293faf;
     fill: #FFF;
     border-radius: 6px;
+    height: 56px;
 }
 
 #btn-nav-next {
@@ -438,11 +439,12 @@ nav#menu-container {
     cursor: pointer;
     font-size: 24px;
     position: absolute;
-    right: 0px;
+    right: 1px;
     padding: 9px 12px;
     background: #293faf;
     fill: #FFF;
     border-radius: 6px;
+    height: 56px;
 }
 
 .menu-inner-box {
@@ -473,10 +475,34 @@ nav#menu-container {
     text-decoration: none;
     text-align: center;
     cursor: pointer;
+    background: #3d5af1;
+    margin-right: -7px;
+    border: unset;
+    transition: 1s;
 }
 
 .menu-item:hover {
-    text-decoration: underline;
+    background: #273ba7;
+}
+
+.menu-item.active {
+    background: #273ba7;
+}
+
+.noselect {
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    -webkit-user-select: none;
+    /* Safari */
+    -khtml-user-select: none;
+    /* Konqueror HTML */
+    -moz-user-select: none;
+    /* Old versions of Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none;
+    /* Non-prefixed version, currently
+                                    supported by Chrome, Edge, Opera and Firefox */
 }
 
 @media only screen and (min-width: 1800px) {

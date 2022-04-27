@@ -407,8 +407,8 @@
             </div>
             <!-- Prescription Order -->
             <div class="card">
+                <legend class="Prescriptionlegend">اطلاعات بیمار</legend>
                 <form class="FormInline">
-                    <legend class="Prescriptionlegend">اطلاعات بیمار</legend>
                     <div class="form-floating mb-3">
                         <input type="email" class="form-control" id="FloatingCaseNumber" value="222222" disabled>
                         <label for="FloatingCaseNumber"> شماره پرونده</label>
@@ -500,92 +500,35 @@
                             <path d="M0 0h24v24H0z" fill="none" />
                         </svg>
                     </div>
-                    <div class="menu-inner-box">
+                    <div class="menu-inner-box noselect">
                         <div class="menu">
-                            <a class="menu-item active" onclick="ChangeSection(event, 'Visit')">ویزیت</a>
-                            <a class="menu-item" onclick="ChangeSection(event, 'Drug')">دارو</a>
-                            <a class="menu-item" onclick="ChangeSection(event, 'MedicalService')">خدمات پزشکی</a>
-                            <a class="menu-item" onclick="ChangeSection(event, 'Lab')">آزمایشگاه</a>
-                            <a class="menu-item" onclick="ChangeSection(event, 'Radio')">رادیولوژی</a>
-                            <a class="menu-item" onclick="ChangeSection(event, 'CtScan')">CT Scan</a>
-                            <a class="menu-item" onclick="ChangeSection(event, 'MRI')">MRI</a>
-                            <a class="menu-item" onclick="ChangeSection(event, 'Sonographi')">سونوگرافی</a>
-                            <a class="menu-item" onclick="ChangeSection(event, 'physiotherapy')">فیزیوتراپی</a>
-                            <a class="menu-item" onclick="ChangeSection(event, 'OderMedService')">سایر خدمات
+                            <button class="menu-item active" onclick="ChangeSection(event, 'Visit')" style="border-radius: 0px 9px;">ویزیت</button>
+                            <button class="menu-item" onclick="ChangeSection(event, 'Drug')">دارو</button>
+                            <button class="menu-item" onclick="ChangeSection(event, 'MedicalService')">خدمات پزشکی</button>
+                            <button class="menu-item" onclick="ChangeSection(event, 'Lab')">آزمایشگاه</button>
+                            <button class="menu-item" onclick="ChangeSection(event, 'Radio')">رادیولوژی</button>
+                            <button class="menu-item" onclick="ChangeSection(event, 'CtScan')">CT Scan</button>
+                            <button class="menu-item" onclick="ChangeSection(event, 'MRI')">MRI</button>
+                            <button class="menu-item" onclick="ChangeSection(event, 'Sonographi')">سونوگرافی</button>
+                            <button class="menu-item" onclick="ChangeSection(event, 'physiotherapy')">فیزیوتراپی</button>
+                            <button class="menu-item" onclick="ChangeSection(event, 'OderMedService')">سایر خدمات
                                 پاراکلینیک</a>
-                            <a class="menu-item" onclick="ChangeSection(event, 'RedirectServices')">خدمات ارجاعی</a>
+                            <button class="menu-item" style="margin-left: 50px;" onclick="ChangeSection(event, 'RedirectServices')">خدمات ارجاعی</button>
                         </div>
                     </div>
                 </nav>
                 <!-- Visit Table Inside Menu -->
                 <div id="Visit" class="tabcontent active" style="display: block;">
                     <form class="FormInline">
-                        <div class="form-floating mb-3">
-                            <input type="email" class="form-control" id="FloatingVisitTableCaseNumber" placeholder="name@example.com">
-                            <label for="FloatingVisitTableCaseNumber"> شماره پرونده</label>
-                        </div>
-                        <div class="form-floating mb-3">
-                            <input type="email" class="form-control Qbime" id="FloatingVisitTableQuickInsuranceCode" placeholder="name@example.com">
-                            <label for="FloatingVisitTableQuickInsuranceCode">کد سریع بیمه</label>
-                        </div>
-                        <select class="form-select form-select-lg mb-3 Gender" aria-label=".form-select-lg example">
-                            <option value="1">بیمه گر</option>
-                            <option value="2">بدون بیمه</option>
-                            <option value="3">تامین</option>
-                            <option value="4">...</option>
-                        </select>
-                        <div class="form-floating mb-3">
-                            <input type="email" class="form-control" id="FloatingVisitTableInsuranceCode" placeholder="name@example.com">
-                            <label for="FloatingVisitTableInsuranceCode">شماره بیمه</label>
-                        </div>
-                        <select class="form-select form-select-lg mb-3 Gender" aria-label=".form-select-lg example">
-                            <option value="1">بیمه تکمیلی</option>
-                            <option value="2">سامان</option>
-                            <option value="3">ایران</option>
-                            <option value="4">...</option>
-                        </select>
-                        <div class="form-floating mb-3">
-                            <input type="email" class="form-control" id="FloatingVisitTableFirsName" placeholder="name@example.com">
-                            <label for="FloatingVisitTableFirsName"> نام</label>
-                        </div>
-                        <div class="form-floating mb-3">
-                            <input type="email" class="form-control" id="FloatingVisitTableLastName" placeholder="name@example.com">
-                            <label for="FloatingVisitTableLastName"> نام خانوادگی</label>
-                        </div>
-                        <div class="form-floating mb-3">
-                            <input type="email" class="form-control" id="FloatingVisitTableFatherName" placeholder="name@example.com">
-                            <label for="FloatingVisitTableFatherName"> نام پدر</label>
-                        </div>
-                        <div class="form-floating mb-3">
-                            <input type="email" class="form-control" id="FloatingVisitTableNationalCode" placeholder="name@example.com">
-                            <label for="FloatingVisitTableNationalCode"> کد ملی</label>
-                        </div>
-                        <select class="form-select form-select-lg mb-3 Gender" aria-label=".form-select-lg example">
-                            <option value="1">مرد</option>
-                            <option value="2">زن</option>
-                            <option value="3">سایر</option>
-                        </select>
-                        <div class="form-floating mb-3">
-                            <input type="email" class="form-control" id="FloatingVisitTableJob" placeholder="name@example.com">
-                            <label for="FloatingVisitTableJob"> شغل</label>
-                        </div>
-                        <div class="form-floating mb-3">
-                            <input type="email" class="form-control" id="FloatingVisitTableHomeNumber" placeholder="name@example.com">
-                            <label for="FloatingVisitTableHomeNumber"> تلفن ثابت</label>
-                        </div>
-                        <div class="form-floating mb-3">
-                            <input type="email" class="form-control" id="FloatingVisitTablePhoneNamber" placeholder="name@example.com">
-                            <label for="FloatingVisitTablePhoneNamber"> تلفن همراه</label>
-                        </div>
-                        <div class="form-floating mb-3">
-                            <input type="text" class="form-control Address" row="3" id="FloatingVisitTableAddress" placeholder="name@example.com">
-                            <label for="FloatingVisitTableAddress"> آدرس</label>
+                        <div class="mb-3 col-12">
+                            <label for="DoctorExplainment" class="form-label">توضیحات تکمیلی پزشک:</label>
+                            <textarea class="form-control" id="DoctorExplainment" rows="5"></textarea>
                         </div>
                     </form>
                     <div class="inline InlineButton">
+                        <button class="btn btn-primary BtnForm" type="submit">چاپ</button>
                         <button class="btn btn-primary BtnForm" type="submit">ثبت</button>
-                        <button class="btn btn-primary BtnForm" type="reset ">ریست</button>
-                        <button class="btn btn-primary BtnForm" type="reset ">بیشتر</button>
+                        <button class="btn btn-primary BtnForm" type="reset ">انصراف</button>
                     </div>
                 </div>
                 <div id="Drug" class="tabcontent ">
