@@ -485,7 +485,7 @@ nav#menu-container {
     background: #273ba7;
 }
 
-.menu-item.active {
+.menu-item:focus {
     background: #273ba7;
 }
 
