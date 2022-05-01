@@ -276,7 +276,7 @@
             <div class="card">
                 <form class="FormInline needs-validation">
                     <div class="form-floating mb-3">
-                        <input type="email" class="form-control" id="FloatingPatientCaseNumber" placeholder="name@example.com">
+                        <input type="email" class="form-control" id="FloatingPatientCaseNumber" placeholder="name@example.com" disabled>
                         <label for="FloatingPatientCaseNumber"> شماره پرونده</label>
                     </div>
                     <div class="form-floating mb-3">
@@ -502,18 +502,43 @@
                     </div>
                     <div class="menu-inner-box noselect">
                         <div class="menu">
-                            <button class="menu-item active" onclick="ChangeSection(event, 'Visit')" style="border-radius: 0px 9px;">ویزیت</button>
-                            <button class="menu-item" onclick="ChangeSection(event, 'Drug')">دارو</button>
-                            <button class="menu-item" onclick="ChangeSection(event, 'MedicalService')">خدمات پزشکی</button>
-                            <button class="menu-item" onclick="ChangeSection(event, 'Lab')">آزمایشگاه</button>
-                            <button class="menu-item" onclick="ChangeSection(event, 'Radio')">رادیولوژی</button>
-                            <button class="menu-item" onclick="ChangeSection(event, 'CtScan')">CT Scan</button>
-                            <button class="menu-item" onclick="ChangeSection(event, 'MRI')">MRI</button>
-                            <button class="menu-item" onclick="ChangeSection(event, 'Sonographi')">سونوگرافی</button>
-                            <button class="menu-item" onclick="ChangeSection(event, 'physiotherapy')">فیزیوتراپی</button>
-                            <button class="menu-item" onclick="ChangeSection(event, 'OderMedService')">سایر خدمات
-                                پاراکلینیک</a>
-                            <button class="menu-item" style="margin-left: 50px;" onclick="ChangeSection(event, 'RedirectServices')">خدمات ارجاعی</button>
+                            <a href="#Visit">
+                                <button class="menu-item active" onclick="ChangeSection(event, 'Visit');" style="border-radius: 0px 9px;">ویزیت</button>
+                            </a>
+                            <a href="#Drug">
+                                <button class="menu-item" onclick="ChangeSection(event, 'Drug');SmoothScroll()">دارو</button>
+                            </a>
+                            <a href="#MedicalService">
+                                <button class="menu-item" onclick="ChangeSection(event, 'MedicalService');SmoothScroll()">خدمات
+                                    پزشکی</button>
+                            </a>
+                            <a href="#Lab">
+                                <button class="menu-item" onclick="ChangeSection(event, 'Lab');SmoothScroll()">آزمایشگاه</button>
+                            </a>
+                            <a href="#Radio">
+                                <button class="menu-item" onclick="ChangeSection(event, 'Radio');SmoothScroll()">رادیولوژی</button>
+                            </a>
+                            <a href="#CtScan">
+                                <button class="menu-item" onclick="ChangeSection(event, 'CtScan')">CT
+                                    Scan</button>
+                            </a>
+                            <a href="#MRI">
+                                <button class="menu-item" onclick="ChangeSection(event, 'MRI');SmoothScroll()">MRI</button>
+                            </a>
+                            <a href="#Sonographi">
+                                <button class="menu-item" onclick="ChangeSection(event, 'Sonographi');SmoothScroll()">سونوگرافی</button>
+                            </a>
+                            <a href="#physiotherapy">
+                                <button class="menu-item" onclick="ChangeSection(event, 'physiotherapy');SmoothScroll()">فیزیوتراپی</button>
+                            </a>
+                            <a href="#OderMedService">
+                                <button class="menu-item" onclick="ChangeSection(event, 'OderMedService');SmoothScroll()">سایر
+                                    خدمات
+                                    پاراکلینیک</button></a>
+                            <a href="#RedirectServices">
+                                <button class="menu-item" style="margin-left: 50px;" onclick="ChangeSection(event, 'RedirectServices')">خدمات
+                                    ارجاعی</button>
+                            </a>
                         </div>
                     </div>
                 </nav>
