@@ -8,8 +8,9 @@
     <link href="/libs/bootstrap/css/bootstrap.rtl.min.css" rel="stylesheet" type="text/css" />
     <link href='/libs/SideBar/boxicons.min.css' rel='stylesheet'>
     <link href="/libs/SideBar/style.css" rel="stylesheet">
-    <link href="/css/CustomAdminPanel.css" rel="stylesheet" type="text/css" />
+    <link href="/css/select2.min.css" rel="stylesheet" type="text/css" />
     <link href="\node_modules\persian-datepicker\dist\css\persian-datepicker.min.css" rel="stylesheet" />
+    <link href="/css/CustomAdminPanel.css" rel="stylesheet" type="text/css" />
     <!-- FavIcons Add -->
     <meta name="theme-color" content="#2980b9">
 </head>
@@ -102,7 +103,6 @@
                 </li>
             </ul>
         </div>
-
         <div class="sidebar-footer">
             <a href="#" class="account tooltip-element tablinks" data-tooltip="0" onclick="ChangeSection(event, 'ProfileSection')">
                 <i class='bx bx-user'></i>
@@ -264,15 +264,25 @@
 
     <!-- Dashboard -->
     <div id="DashboardSection" class="tabcontent active" style="display: block;">
-        <div class="container-fluid BackGround">
-            <div class="card">
-                ?
+        <div class="container-fluid row ">
+            <div class="card widthFixer">
+                <canvas id="ChartVisitInfo"></canvas>
+            </div>
+            <div class="card widthFixer">
+                <canvas id="MonthChart"></canvas>
+            </div>
+            <div class="card widthFixer">
+                <canvas id="MoneyChart"></canvas>
+            </div>
+            <div class="card widthFixer">
+                <canvas id="ChartOfInsurance"></canvas>
             </div>
         </div>
     </div>
+    </div>
     <!-- Patient Case Record -->
     <div id="CaseSection" class="tabcontent ">
-        <div class="container-fluid BackGround">
+        <div class="container-fluid ">
             <div class="card">
                 <form class="FormInline needs-validation">
                     <div class="form-floating mb-3">
@@ -347,7 +357,7 @@
     </div>
     <!-- Doctor & Prescription Page -->
     <div id="DoctorPage" class="tabcontent ">
-        <div class="container-fluid BackGround">
+        <div class="container-fluid ">
             <div class="card TableCard ">
                 <table class="table TableGui">
                     <thead class="thead-primary">
@@ -558,7 +568,20 @@
                 </div>
                 <div id="Drug" class="tabcontent ">
                     <form class="FormInline">
-                        test
+                        <select class="Selector" name="state">
+                            <option value="1">drog1</option>
+                            <option value="2">drog2</option>
+                        </select> <select class="Selector" name="state">
+                            <option value="1">سه بار در روز</option>
+                            <option value="2">دو بار در روز</option>
+                        </select> <select class="Selector" name="state">
+                            <option value="1">با غذا</option>
+                            <option value="2">صبح</option>
+                        </select>
+                        </select> <select class="Selector" name="state">
+                        <option value="1">2</option>
+                        <option value="2">3</option>
+                    </select>
                     </form>
                     <div class="inline InlineButton">
                         <button class="btn btn-primary BtnForm" type="submit">ثبت</button>
@@ -893,7 +916,7 @@
     </div>
     <!-- User Profile Panel -->
     <div id="ProfileSection " class="tabcontent ">
-        <div class="container-fluid BackGround ">
+        <div class="container-fluid  ">
             <div class="card ">
                 <form class="FormInline ">
 
@@ -921,8 +944,12 @@
     <script src="/libs/bootstrap/js/bootst.min.js "></script>
     <script src="/node_modules/persian-date/dist/persian-date.min.js"></script>
     <script src="/node_modules/persian-datepicker/dist/js/persian-datepicker.min.js"></script>
-    <script src="/js/customjs.js "></script>
     <script src="/libs/SideBar/app.js "></script>
+    <script src="/js/Chart.js"></script>
+    <script src="/js/plotly-latest.min.js"></script>
+    <script src="/js/select2.min.js"></script>
+    <script src="/js/customjs.js "></script>
+
 
     <script type="text/javascript">
         $(document).ready(function() {
