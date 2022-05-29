@@ -38,6 +38,7 @@
     align-items: stretch;
     align-content: stretch;
     margin-bottom: 2rem;
+    margin-top: -7px;
 }
 
 .InlineSms {
@@ -310,6 +311,10 @@ table {
     table-layout: fixed;
 }
 
+table i {
+    font-size: 3vh;
+}
+
 ::-webkit-scrollbar {
     width: 10px;
 }
@@ -525,16 +530,25 @@ nav#menu-container {
 
 .select2-container--default .select2-selection--single {
     background-color: #fff;
-    border: 2px solid #9f9f9f78;
-    width: 512px;
+    border: 1px solid #9f9f9f78;
+    width: 245px;
     height: 57px;
     margin-right: 1rem;
     margin-bottom: 1rem;
     border-radius: 6px;
+    margin-right: 1.2rem;
+}
+
+.WideSelect {
+    width: 508px!important;
 }
 
 @media only screen and (max-width: 810px) {
     .select2-container--default .select2-selection--single {
-        width: 240px;
+        width: 245px;
     }
+}
+
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+    line-height: 54px;
 }

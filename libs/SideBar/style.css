@@ -81,22 +81,24 @@ nav::before {
 
 .shrink-btn {
     position: absolute;
-    top: -55%;
-    height: 27px;
-    padding: 0 0.3rem;
+    top: -54%;
+    height: 34px;
+    width: 50px;
+    padding: 3px 0.3rem;
     background-color: var(--main-color);
     border-radius: 6px;
     cursor: pointer;
-    box-shadow: 0 3px 10px -3px rgba(70, 46, 118, 0.3);
+    box-shadow: 0 3px 10px -3px rgb(70 46 118 / 30%);
     right: 15rem;
     transform: translateY(-50%) translateX(-8px);
     opacity: 100;
     pointer-events: none;
-    transition: 0.8s;
+    transition: 0.4s;
 }
 
 .shrink-btn i {
-    line-height: 27px;
+    line-height: 29px;
+    margin-right: 13px;
     transition: 0.4s;
 }
 
@@ -385,6 +387,7 @@ ul {
 .card {
     border-radius: 8px;
     margin-top: 2rem;
+    margin-bottom: 2rem;
     width: 100%;
     box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
 }

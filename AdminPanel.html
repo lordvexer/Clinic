@@ -112,7 +112,7 @@
                     <div class="admin-profile hide">
                         <img src="./img/face-1.jpg" alt="">
                         <div class="admin-info">
-                            <h3>دکتر هوشنگ</h3>
+                            <h3>دکتر ابتکار</h3>
                             <h5>Admin</h5>
                         </div>
                     </div>
@@ -411,8 +411,11 @@
                     </ul>
                 </nav>
                 <div class="inline InlineButton">
-                    <button class="btn btn-primary BtnForm" style="min-width: 168px;" type="reset ">دریافت
-                        اطلاعات</button>
+                    <div class="form-floating mb-3">
+                        <input type="email" class="form-control Qbime" id="GetMelliCode" placeholder="name@example.com">
+                        <label for="GetMelliCode">کد ملی را وارد کنید</label>
+                    </div>
+                    <button class="btn btn-primary BtnForm" type="reset " style="height: calc(3.5rem + 2px);margin-top: 0px;">دریافت اطلاعات</button>
                 </div>
             </div>
             <!-- Prescription Order -->
@@ -468,7 +471,7 @@
                         <label for="FloatingHaveCase">بیمار دارای پرونده</label>
                     </div>
                     <div class="form-floating mb-3">
-                        <input type="email" class="form-control" id="FloatingHaveImportantIssue" value="سرطان لنف" disabled>
+                        <input type="email" class="form-control" id="FloatingHaveImportantIssue" value="بدون بیماری زمینه ای" disabled>
                         <label for="FloatingHaveImportantIssue">دارای بیماری مهم</label>
                     </div>
                     <select class="form-select form-select-lg mb-3 Gender" aria-label=".form-select-lg example">
@@ -566,127 +569,220 @@
                         <button class="btn btn-primary BtnForm" type="reset ">انصراف</button>
                     </div>
                 </div>
+                <!-- Drug Section -->
                 <div id="Drug" class="tabcontent ">
                     <form class="FormInline">
-                        <select class="Selector" name="state">
+                        <select class="Selector " style="width:508px;" name="state">
+                            <option value="1">نام دارو را انتخاب کنید</option>
                             <option value="1">drog1</option>
                             <option value="2">drog2</option>
-                        </select> <select class="Selector" name="state">
+                        </select>
+                        <select class="Selector" name="state">
+                            <option value="1">زمان مصرف</option>
                             <option value="1">سه بار در روز</option>
                             <option value="2">دو بار در روز</option>
-                        </select> <select class="Selector" name="state">
+                        </select>
+                        <select class="Selector" name="state">
+                            <option value="1">طریقه مصرف</option>
                             <option value="1">با غذا</option>
                             <option value="2">صبح</option>
                         </select>
-                        </select> <select class="Selector" name="state">
-                        <option value="1">2</option>
-                        <option value="2">3</option>
-                    </select>
+                        <select class="Selector" name="state">
+                            <option value="1">مقادیر مصرف</option>
+                            <option value="1">2</option>
+                            <option value="2">3</option>
+                        </select>
+                        <div class="form-floating mb-3">
+                            <input type="number" class="form-control" id="FloatingPeriod" value="-">
+                            <label for="FloatingPeriod">تعداد دوره مصرف</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="number" class="form-control" id="NumberOfPill">
+                            <label for="NumberOfPill">دوره تکرار</label>
+                        </div>
+                        <button class="btn btn-primary BtnForm" type="submit" style="background: #369ba5;height: 57px;margin-top: 2px;">درج در لیست</button>
                     </form>
-                    <div class="inline InlineButton">
-                        <button class="btn btn-primary BtnForm" type="submit">ثبت</button>
-                        <button class="btn btn-primary BtnForm" type="reset ">نسخه پر استفاده</button>
-                        <button class="btn btn-primary BtnForm" type="reset ">چاپ</button>
-                        <button class="btn btn-primary BtnForm" type="reset ">انصراف</button>
+                    <div class="card TableCard ">
+                        <table class="table TableGui " style="width:100%">
+                            <thead class="thead-primary">
+                                <th style="width:40%">نام دارو</th>
+                                <th style="width:3%">تعداد</th>
+                                <th style="width:12%">مقادیر مصرف</th>
+                                <th style="width:5%">زمان مصرف</th>
+                                <th style="width:5%">تکرار</th>
+                                <th style="width:5%">دستورات</th>
+                                <th style="width:5%">حذف</th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row" class="scope">(18F) FLUDEOXYGLUCOSE 10 mCi PARENTERAL INJECTION, SOLUTION</th>
+                                    <td>2</td>
+                                    <td>يک و نيم عدد-Tab/Cap</td>
+                                    <td>هر 4 ساعت </td>
+                                    <td>1</td>
+                                    <td><i class='bx bxs-notepad '></i></td>
+                                    <td><i class='bx bxs-message-alt-x '></i></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" class="scope"> PROSTAGLANDIN E1(ALPROSTADIL) POWDERFOR SOLUTION 20 ug </th>
+                                    <td>5</td>
+                                    <td>يک و نيم عدد-Tab/Cap</td>
+                                    <td>هر 4 ساعت</td>
+                                    <td>2</td>
+                                    <td><i class='bx bxs-notepad'></i></td>
+                                    <td><i class='bx bxs-message-alt-x'></i></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <form class="FormInline">
+                        <div class="mb-3 col-12">
+                            <label for="DoctorExplainment" class="form-label">توضیحات تکمیلی پزشک:</label>
+                            <textarea class="form-control" id="DoctorExplainment" rows="5"></textarea>
+                        </div>
+                    </form>
+                    <div class=" inline InlineButton ">
+                        <button class="btn btn-primary BtnForm " type="submit ">ثبت</button>
+                        <button class="btn btn-primary BtnForm " type="reset ">نسخه پر استفاده</button>
+                        <button class="btn btn-primary BtnForm " type="reset ">چاپ</button>
+                        <button class="btn btn-primary BtnForm " type="reset ">انصراف</button>
                     </div>
                 </div>
-                <div id="MedicalService" class="tabcontent ">
-                    <form class="FormInline">
-                        test
+                <div id="MedicalService " class="tabcontent ">
+                    <form class="FormInline ">
+                        <form class="FormInline">
+                            <select class="Selector" name="state">
+                                <option value="1">خدمت  1</option>
+                                <option value="2">خدمت 2</option>
+                            </select>
+                            <div class="form-floating mb-3">
+                                <input type="number" class="form-control" id="NumberOfService">
+                                <label for="NumberOfService">تعداد</label>
+                            </div>
+                            <button class="btn btn-primary BtnForm" type="submit" style="background: #369ba5;height: 57px;margin-top: 2px;">درج در لیست</button>
+                        </form>
+                        <div class="card TableCard ">
+                            <table class="table TableGui">
+                                <thead class="thead-primary">
+                                    <th>نام خدمت</th>
+                                    <th>تعداد</th>
+                                    <th>حذف</th>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row" class="scope"> Body Box شامل پلتيسموگرافي، اندازه‌گيري ظرفيت باقي مانده عملکردي (FRC)، حجم باقي مانده (RV) و ظرفيت کامل ريوي (TLC) و اندازه گيري مقاومت مجاري هوايي و همراه با اندازه گيري کامل حجم هاي ديناميک(توام با اسيپرومتري
+                                            کامل) و استاتيک ريه </th>
+                                        <td>2</td>
+                                        <td>btn</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="scope">اندازه‌گيري ظرفيت باقي مانده عملکرد</th>
+                                        <td>5</td>
+                                        <td>btn</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </form>
-                    <div class="inline InlineButton">
-                        <button class="btn btn-primary BtnForm" type="submit">ثبت</button>
-                        <button class="btn btn-primary BtnForm" type="reset ">نسخه پر استفاده</button>
-                        <button class="btn btn-primary BtnForm" type="reset ">چاپ</button>
-                        <button class="btn btn-primary BtnForm" type="reset ">انصراف</button>
+                    <form class="FormInline">
+                        <div class="mb-3 col-12">
+                            <label for="DoctorExplainment" class="form-label">توضیحات تکمیلی پزشک:</label>
+                            <textarea class="form-control" id="DoctorExplainment" rows="5"></textarea>
+                        </div>
+                    </form>
+                    <div class="inline InlineButton ">
+                        <button class="btn btn-primary BtnForm " type="submit ">ثبت</button>
+                        <button class="btn btn-primary BtnForm " type="reset ">نسخه پر استفاده</button>
+                        <button class="btn btn-primary BtnForm " type="reset ">چاپ</button>
+                        <button class="btn btn-primary BtnForm " type="reset ">انصراف</button>
                     </div>
                 </div>
-                <div id="Lab" class="tabcontent ">
-                    <form class="FormInline">
+                <div id="Lab " class="tabcontent ">
+                    <form class="FormInline ">
                         test
                     </form>
-                    <div class="inline InlineButton">
-                        <button class="btn btn-primary BtnForm" type="submit">ثبت</button>
-                        <button class="btn btn-primary BtnForm" type="reset ">نسخه پر استفاده</button>
-                        <button class="btn btn-primary BtnForm" type="reset ">چاپ</button>
-                        <button class="btn btn-primary BtnForm" type="reset ">انصراف</button>
+                    <div class="inline InlineButton ">
+                        <button class="btn btn-primary BtnForm " type="submit ">ثبت</button>
+                        <button class="btn btn-primary BtnForm " type="reset ">نسخه پر استفاده</button>
+                        <button class="btn btn-primary BtnForm " type="reset ">چاپ</button>
+                        <button class="btn btn-primary BtnForm " type="reset ">انصراف</button>
                     </div>
                 </div>
-                <div id="Radio" class="tabcontent ">
-                    <form class="FormInline">
+                <div id="Radio " class="tabcontent ">
+                    <form class="FormInline ">
                         test
                     </form>
-                    <div class="inline InlineButton">
-                        <button class="btn btn-primary BtnForm" type="submit">ثبت</button>
-                        <button class="btn btn-primary BtnForm" type="reset ">نسخه پر استفاده</button>
-                        <button class="btn btn-primary BtnForm" type="reset ">چاپ</button>
-                        <button class="btn btn-primary BtnForm" type="reset ">انصراف</button>
+                    <div class="inline InlineButton ">
+                        <button class="btn btn-primary BtnForm " type="submit ">ثبت</button>
+                        <button class="btn btn-primary BtnForm " type="reset ">نسخه پر استفاده</button>
+                        <button class="btn btn-primary BtnForm " type="reset ">چاپ</button>
+                        <button class="btn btn-primary BtnForm " type="reset ">انصراف</button>
                     </div>
                 </div>
-                <div id="CtScan" class="tabcontent ">
-                    <form class="FormInline">
+                <div id="CtScan " class="tabcontent ">
+                    <form class="FormInline ">
                         test
                     </form>
-                    <div class="inline InlineButton">
-                        <button class="btn btn-primary BtnForm" type="submit">ثبت</button>
-                        <button class="btn btn-primary BtnForm" type="reset ">نسخه پر استفاده</button>
-                        <button class="btn btn-primary BtnForm" type="reset ">چاپ</button>
-                        <button class="btn btn-primary BtnForm" type="reset ">انصراف</button>
+                    <div class="inline InlineButton ">
+                        <button class="btn btn-primary BtnForm " type="submit ">ثبت</button>
+                        <button class="btn btn-primary BtnForm " type="reset ">نسخه پر استفاده</button>
+                        <button class="btn btn-primary BtnForm " type="reset ">چاپ</button>
+                        <button class="btn btn-primary BtnForm " type="reset ">انصراف</button>
                     </div>
                 </div>
-                <div id="MRI" class="tabcontent ">
-                    <form class="FormInline">
+                <div id="MRI " class="tabcontent ">
+                    <form class="FormInline ">
                         test
                     </form>
-                    <div class="inline InlineButton">
-                        <button class="btn btn-primary BtnForm" type="submit">ثبت</button>
-                        <button class="btn btn-primary BtnForm" type="reset ">نسخه پر استفاده</button>
-                        <button class="btn btn-primary BtnForm" type="reset ">چاپ</button>
-                        <button class="btn btn-primary BtnForm" type="reset ">انصراف</button>
+                    <div class="inline InlineButton ">
+                        <button class="btn btn-primary BtnForm " type="submit ">ثبت</button>
+                        <button class="btn btn-primary BtnForm " type="reset ">نسخه پر استفاده</button>
+                        <button class="btn btn-primary BtnForm " type="reset ">چاپ</button>
+                        <button class="btn btn-primary BtnForm " type="reset ">انصراف</button>
                     </div>
                 </div>
-                <div id="Sonographi" class="tabcontent ">
-                    <form class="FormInline">
+                <div id="Sonographi " class="tabcontent ">
+                    <form class="FormInline ">
                         test
                     </form>
-                    <div class="inline InlineButton">
-                        <button class="btn btn-primary BtnForm" type="submit">ثبت</button>
-                        <button class="btn btn-primary BtnForm" type="reset ">نسخه پر استفاده</button>
-                        <button class="btn btn-primary BtnForm" type="reset ">چاپ</button>
-                        <button class="btn btn-primary BtnForm" type="reset ">انصراف</button>
+                    <div class="inline InlineButton ">
+                        <button class="btn btn-primary BtnForm " type="submit ">ثبت</button>
+                        <button class="btn btn-primary BtnForm " type="reset ">نسخه پر استفاده</button>
+                        <button class="btn btn-primary BtnForm " type="reset ">چاپ</button>
+                        <button class="btn btn-primary BtnForm " type="reset ">انصراف</button>
                     </div>
                 </div>
-                <div id="physiotherapy" class="tabcontent ">
-                    <form class="FormInline">
+                <div id="physiotherapy " class="tabcontent ">
+                    <form class="FormInline ">
                         test
                     </form>
-                    <div class="inline InlineButton">
-                        <button class="btn btn-primary BtnForm" type="submit">ثبت</button>
-                        <button class="btn btn-primary BtnForm" type="reset ">نسخه پر استفاده</button>
-                        <button class="btn btn-primary BtnForm" type="reset ">چاپ</button>
-                        <button class="btn btn-primary BtnForm" type="reset ">انصراف</button>
+                    <div class="inline InlineButton ">
+                        <button class="btn btn-primary BtnForm " type="submit ">ثبت</button>
+                        <button class="btn btn-primary BtnForm " type="reset ">نسخه پر استفاده</button>
+                        <button class="btn btn-primary BtnForm " type="reset ">چاپ</button>
+                        <button class="btn btn-primary BtnForm " type="reset ">انصراف</button>
                     </div>
                 </div>
-                <div id="OderMedService" class="tabcontent ">
-                    <form class="FormInline">
+                <div id="OderMedService " class="tabcontent ">
+                    <form class="FormInline ">
                         test
                     </form>
-                    <div class="inline InlineButton">
-                        <button class="btn btn-primary BtnForm" type="submit">ثبت</button>
-                        <button class="btn btn-primary BtnForm" type="reset ">نسخه پر استفاده</button>
-                        <button class="btn btn-primary BtnForm" type="reset ">چاپ</button>
-                        <button class="btn btn-primary BtnForm" type="reset ">انصراف</button>
+                    <div class="inline InlineButton ">
+                        <button class="btn btn-primary BtnForm " type="submit ">ثبت</button>
+                        <button class="btn btn-primary BtnForm " type="reset ">نسخه پر استفاده</button>
+                        <button class="btn btn-primary BtnForm " type="reset ">چاپ</button>
+                        <button class="btn btn-primary BtnForm " type="reset ">انصراف</button>
                     </div>
                 </div>
-                <div id="RedirectServices" class="tabcontent ">
-                    <form class="FormInline">
+                <div id="RedirectServices " class="tabcontent ">
+                    <form class="FormInline ">
                         test
                     </form>
-                    <div class="inline InlineButton">
-                        <button class="btn btn-primary BtnForm" type="submit">ثبت</button>
-                        <button class="btn btn-primary BtnForm" type="reset ">نسخه پر استفاده</button>
-                        <button class="btn btn-primary BtnForm" type="reset ">چاپ</button>
-                        <button class="btn btn-primary BtnForm" type="reset ">انصراف</button>
+                    <div class="inline InlineButton ">
+                        <button class="btn btn-primary BtnForm " type="submit ">ثبت</button>
+                        <button class="btn btn-primary BtnForm " type="reset ">نسخه پر استفاده</button>
+                        <button class="btn btn-primary BtnForm " type="reset ">چاپ</button>
+                        <button class="btn btn-primary BtnForm " type="reset ">انصراف</button>
                     </div>
                 </div>
             </div>
@@ -694,86 +790,86 @@
     </div>
 
     <!-- Acceptance -->
-    <div id="AcceptanceSection" class="tabcontent ">
+    <div id="AcceptanceSection " class="tabcontent ">
         <div class="container-fluid ">
-            <div class="card">
-                <form class="FormInline">
-                    <div class="form-floating mb-3">
-                        <input type="email" class="form-control" id="FloatingAcceptanceCaseNamber" placeholder="name@example.com" disabled>
-                        <label for="FloatingAcceptanceCaseNamber"> شماره پرونده</label>
+            <div class="card ">
+                <form class="FormInline ">
+                    <div class="form-floating mb-3 ">
+                        <input type="email " class="form-control " id="FloatingAcceptanceCaseNamber " placeholder="name@example.com " disabled>
+                        <label for="FloatingAcceptanceCaseNamber "> شماره پرونده</label>
                     </div>
-                    <div class="form-floating mb-3">
-                        <input type="email" class="form-control Qbime" id="FloatingAcceptanceInsuranceName" placeholder="name@example.com" disabled>
-                        <label for="FloatingAcceptanceInsuranceName">شرکت بیمه</label>
+                    <div class="form-floating mb-3 ">
+                        <input type="email " class="form-control Qbime " id="FloatingAcceptanceInsuranceName " placeholder="name@example.com " disabled>
+                        <label for="FloatingAcceptanceInsuranceName ">شرکت بیمه</label>
                     </div>
-                    <div class="form-floating mb-3">
-                        <input type="email" class="form-control Qbime " id="FloatingAcceptanceInsuranceDate" placeholder="name@example.com" disabled>
-                        <label for="FloatingAcceptanceInsuranceDate">تاریخ اعتبار بیمه</label>
+                    <div class="form-floating mb-3 ">
+                        <input type="email " class="form-control Qbime " id="FloatingAcceptanceInsuranceDate " placeholder="name@example.com " disabled>
+                        <label for="FloatingAcceptanceInsuranceDate ">تاریخ اعتبار بیمه</label>
                     </div>
-                    <div class="form-floating mb-3">
-                        <input type="email" class="form-control Qbime" id="FloatingAcceptanceNasionalCode" placeholder="name@example.com" disabled>
-                        <label for="FloatingAcceptanceNasionalCode">کد ملی</label>
+                    <div class="form-floating mb-3 ">
+                        <input type="email " class="form-control Qbime " id="FloatingAcceptanceNasionalCode " placeholder="name@example.com " disabled>
+                        <label for="FloatingAcceptanceNasionalCode ">کد ملی</label>
                     </div>
-                    <div class="form-floating mb-3">
-                        <input type="email" class="form-control" id="FloatingAcceptanceFirstName" placeholder="name@example.com" disabled>
-                        <label for="FloatingAcceptanceFirstName"> نام</label>
+                    <div class="form-floating mb-3 ">
+                        <input type="email " class="form-control " id="FloatingAcceptanceFirstName " placeholder="name@example.com " disabled>
+                        <label for="FloatingAcceptanceFirstName "> نام</label>
                     </div>
-                    <div class="form-floating mb-3">
-                        <input type="email" class="form-control" id="FloatingAcceptanceLastName" placeholder="name@example.com" disabled>
-                        <label for="FloatingAcceptanceLastName"> نام خانوادگی</label>
+                    <div class="form-floating mb-3 ">
+                        <input type="email " class="form-control " id="FloatingAcceptanceLastName " placeholder="name@example.com " disabled>
+                        <label for="FloatingAcceptanceLastName "> نام خانوادگی</label>
                     </div>
-                    <div class="form-floating mb-3">
-                        <input type="email" class="form-control" id="FloatingAcceptancePhoneNumber" placeholder="name@example.com" disabled>
-                        <label for="FloatingAcceptancePhoneNumber"> تلفن همراه</label>
+                    <div class="form-floating mb-3 ">
+                        <input type="email " class="form-control " id="FloatingAcceptancePhoneNumber " placeholder="name@example.com " disabled>
+                        <label for="FloatingAcceptancePhoneNumber "> تلفن همراه</label>
                     </div>
-                    <select class="form-select form-select-lg mb-3 Gender" aria-label=".form-select-lg example">
-                        <option value="1">انتخاب پزشک</option>
-                        <option value="2">سمیه هوشنگی</option>
-                        <option value="3">محمد پارسال</option>
-                        <option value="4">...</option>
+                    <select class="form-select form-select-lg mb-3 Gender " aria-label=".form-select-lg example ">
+                        <option value="1 ">انتخاب پزشک</option>
+                        <option value="2 ">سمیه هوشنگی</option>
+                        <option value="3 ">محمد پارسال</option>
+                        <option value="4 ">...</option>
                     </select>
                 </form>
-                <div class="inline InlineButton">
-                    <button class="btn btn-primary BtnForm card2Active" type="submit">محاسبه</button>
-                    <button class="btn btn-primary BtnForm" type="submit " data-bs-toggle="modal" data-bs-target="#AcceptanceModal">ریست</button>
+                <div class="inline InlineButton ">
+                    <button class="btn btn-primary BtnForm card2Active " type="submit ">محاسبه</button>
+                    <button class="btn btn-primary BtnForm " type="submit " data-bs-toggle="modal " data-bs-target="#AcceptanceModal ">ریست</button>
                 </div>
             </div>
         </div>
         <div class="container-fluid ">
-            <div class="card2">
-                <form class="FormInline2">
-                    <div class="form-floating mb-3">
-                        <input type="email" class="form-control" id="FloatingAcceptanceAllPrice" placeholder="name@example.com" disabled>
-                        <label for="FloatingAcceptanceAllPrice"> مبلغ کل خدمت</label>
+            <div class="card2 ">
+                <form class="FormInline2 ">
+                    <div class="form-floating mb-3 ">
+                        <input type="email " class="form-control " id="FloatingAcceptanceAllPrice " placeholder="name@example.com " disabled>
+                        <label for="FloatingAcceptanceAllPrice "> مبلغ کل خدمت</label>
                     </div>
-                    <div class="form-floating mb-3">
-                        <input type="email" class="form-control Qbime" id="FloatingAcceptanceTaxs" placeholder="name@example.com" disabled>
-                        <label for="FloatingAcceptanceTaxs">مالیات</label>
+                    <div class="form-floating mb-3 ">
+                        <input type="email " class="form-control Qbime " id="FloatingAcceptanceTaxs " placeholder="name@example.com " disabled>
+                        <label for="FloatingAcceptanceTaxs ">مالیات</label>
                     </div>
-                    <form class=".FormInline2">
-                        <div class="form-floating mb-3">
-                            <input type="email" class="form-control Qbime" id="FloatingAcceptanceInsuranceSlicePrice" placeholder="name@example.com" disabled>
-                            <label for="FloatingAcceptanceInsuranceSlicePrice">سهم بیمه</label>
+                    <form class=".FormInline2 ">
+                        <div class="form-floating mb-3 ">
+                            <input type="email " class="form-control Qbime " id="FloatingAcceptanceInsuranceSlicePrice " placeholder="name@example.com " disabled>
+                            <label for="FloatingAcceptanceInsuranceSlicePrice ">سهم بیمه</label>
                         </div>
-                        <div class="form-floating mb-3">
-                            <input type="email" class="form-control Qbime" id="FloatingAcceptanceInsurancePlusSplicePrice" placeholder="name@example.com" disabled>
-                            <label for="FloatingAcceptanceInsurancePlusSplicePrice">سهم بیمه تکمیلی</label>
+                        <div class="form-floating mb-3 ">
+                            <input type="email " class="form-control Qbime " id="FloatingAcceptanceInsurancePlusSplicePrice " placeholder="name@example.com " disabled>
+                            <label for="FloatingAcceptanceInsurancePlusSplicePrice ">سهم بیمه تکمیلی</label>
                         </div>
-                        <div class="form-floating mb-3">
-                            <input type="email" class="form-control" id="FloatingAcceptancePatientSplicePrice" placeholder="name@example.com" disabled>
-                            <label for="FloatingAcceptancePatientSplicePrice"> سهم بیمار</label>
+                        <div class="form-floating mb-3 ">
+                            <input type="email " class="form-control " id="FloatingAcceptancePatientSplicePrice " placeholder="name@example.com " disabled>
+                            <label for="FloatingAcceptancePatientSplicePrice "> سهم بیمار</label>
                         </div>
                     </form>
-                    <div class="inline InlineButton">
-                        <button class="btn btn-primary BtnForm tablinks" type="button" onclick="ChangeSection(event, 'DashboardSection')" data-tooltip="0">ثبت</button>
-                        <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
-                            <div id="liveToast" class="toast hide" role="alert" aria-live="assertive" aria-atomic="true">
-                                <div class="toast-header">
-                                    <strong class="me-auto">وضعیت</strong>
+                    <div class="inline InlineButton ">
+                        <button class="btn btn-primary BtnForm tablinks " type="button " onclick="ChangeSection(event, 'DashboardSection') " data-tooltip="0 ">ثبت</button>
+                        <div class="position-fixed bottom-0 end-0 p-3 " style="z-index: 11 ">
+                            <div id="liveToast " class="toast hide " role="alert " aria-live="assertive " aria-atomic="true ">
+                                <div class="toast-header ">
+                                    <strong class="me-auto ">وضعیت</strong>
                                     <small>اکنون</small>
-                                    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                                    <button type="button " class="btn-close " data-bs-dismiss="toast " aria-label="Close "></button>
                                 </div>
-                                <div class="toast-body">
+                                <div class="toast-body ">
                                     ثبت با موفقیت انجام شد
                                 </div>
                             </div>
@@ -783,12 +879,12 @@
         </div>
     </div>
     <!-- Patient Record -->
-    <div id="PatientSection" class="tabcontent ">
+    <div id="PatientSection " class="tabcontent ">
         <div class="container-fluid ">
-            <div class="col-12">
-                <div class="card TableCard">
-                    <table class="table TableGui">
-                        <thead class="thead-primary">
+            <div class="col-12 ">
+                <div class="card TableCard ">
+                    <table class="table TableGui ">
+                        <thead class="thead-primary ">
                             <th>نام</th>
                             <th>نام خانوادگی</th>
                             <th>شماره تماس</th>
@@ -796,22 +892,22 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <th scope="row" class="scope">قباد</th>
+                                <th scope="row " class="scope ">قباد</th>
                                 <td>آسی</td>
                                 <td>0912000000</td>
-                                <td><a href="#" class="btn btn-primary BtnFill">مشاهده</a></td>
+                                <td><a href="# " class="btn btn-primary BtnFill ">مشاهده</a></td>
                             </tr>
                             <tr>
-                                <th scope="row" class="scope">میلاد</th>
+                                <th scope="row " class="scope ">میلاد</th>
                                 <td>صادقی</td>
                                 <td>0912000000</td>
-                                <td><a href="#" class="btn btn-primary BtnFill">مشاهده</a></td>
+                                <td><a href="# " class="btn btn-primary BtnFill ">مشاهده</a></td>
                             </tr>
                             <tr>
-                                <th scope="row" class="scope">نفیسه</th>
+                                <th scope="row " class="scope ">نفیسه</th>
                                 <td>خاموش</td>
                                 <td>0912000000</td>
-                                <td><a href="#" class="btn btn-primary BtnFill">مشاهده</a></td>
+                                <td><a href="# " class="btn btn-primary BtnFill ">مشاهده</a></td>
                             </tr>
 
                         </tbody>
@@ -821,12 +917,12 @@
         </div>
     </div>
     <!-- Docter list -->
-    <div id="DoctorSection" class="tabcontent ">
+    <div id="DoctorSection " class="tabcontent ">
         <div class="container-fluid ">
-            <div class="col-12">
-                <div class="card TableCard">
-                    <table class="table TableGui">
-                        <thead class="thead-primary">
+            <div class="col-12 ">
+                <div class="card TableCard ">
+                    <table class="table TableGui ">
+                        <thead class="thead-primary ">
                             <th>نام</th>
                             <th>نام خانوادگی</th>
                             <th>شماره تماس</th>
@@ -835,18 +931,18 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <th scope="row" class="scope">صادق</th>
+                                <th scope="row " class="scope ">صادق</th>
                                 <td>تقیپور</td>
                                 <td>0912000000</td>
                                 <td>56498476</td>
-                                <td><a href="#" class="btn btn-primary BtnFill">مشاهده</a></td>
+                                <td><a href="# " class="btn btn-primary BtnFill ">مشاهده</a></td>
                             </tr>
                             <tr>
-                                <th scope="row" class="scope">حشمت</th>
+                                <th scope="row " class="scope ">حشمت</th>
                                 <td>سرابی</td>
                                 <td>0912000000</td>
                                 <td>56498476</td>
-                                <td><a href="#" class="btn btn-primary BtnFill">مشاهده</a></td>
+                                <td><a href="# " class="btn btn-primary BtnFill ">مشاهده</a></td>
                             </tr>
                         </tbody>
                     </table>
@@ -855,12 +951,12 @@
         </div>
     </div>
     <!-- Sms Panel -->
-    <div id="SmsSection" class="tabcontent ">
+    <div id="SmsSection " class="tabcontent ">
         <div class="container-fluid ">
-            <div class="col-12">
-                <div class="card col-sm-3">
-                    <div class=" inline InlineSms">
-                        <button class="btn btn-primary" type="submit">پنل ارسال پیام</button>
+            <div class="col-12 ">
+                <div class="card col-sm-3 ">
+                    <div class=" inline InlineSms ">
+                        <button class="btn btn-primary " type="submit ">پنل ارسال پیام</button>
                         <div class="form-floating ">
                             <input type="search " class="form-control " id="FloatingSmsSearch " placeholder="جستجو ">
                             <label for="FloatingSmsSearch ">جستجو</label>
@@ -916,12 +1012,12 @@
     </div>
     <!-- User Profile Panel -->
     <div id="ProfileSection " class="tabcontent ">
-        <div class="container-fluid  ">
+        <div class="container-fluid ">
             <div class="card ">
                 <form class="FormInline ">
 
                 </form>
-                <div class="inline InlineButton">
+                <div class="inline InlineButton ">
                     <button class="btn btn-primary BtnForm tooltip-element tablinks " onclick="ChangeSection(event, 'DashboardSection') " type="submit ">بازگشت</button>
                     <button class="btn btn-primary BtnForm " type="submit ">ویرایش</button>
                 </div>
@@ -942,18 +1038,18 @@
     <!-- Scripts -->
     <script src="/js/jquery-3.6.0.min.js "></script>
     <script src="/libs/bootstrap/js/bootst.min.js "></script>
-    <script src="/node_modules/persian-date/dist/persian-date.min.js"></script>
-    <script src="/node_modules/persian-datepicker/dist/js/persian-datepicker.min.js"></script>
+    <script src="/node_modules/persian-date/dist/persian-date.min.js "></script>
+    <script src="/node_modules/persian-datepicker/dist/js/persian-datepicker.min.js "></script>
     <script src="/libs/SideBar/app.js "></script>
-    <script src="/js/Chart.js"></script>
-    <script src="/js/plotly-latest.min.js"></script>
-    <script src="/js/select2.min.js"></script>
+    <script src="/js/Chart.js "></script>
+    <script src="/js/plotly-latest.min.js "></script>
+    <script src="/js/select2.min.js "></script>
     <script src="/js/customjs.js "></script>
 
 
-    <script type="text/javascript">
+    <script type="text/javascript ">
         $(document).ready(function() {
-            $(".PdatePicker").pDatepicker();
+            $(".PdatePicker ").pDatepicker();
         });
     </script>
 

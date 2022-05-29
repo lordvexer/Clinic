@@ -39,7 +39,7 @@ new Chart("ChartVisitInfo", {
 });
 
 
-//Montvisit chart
+//Monthvisit chart
 var ctxL = document.getElementById("MonthChart").getContext('2d');
 var myLineChart = new Chart(ctxL, {
     type: 'line',
@@ -141,3 +141,6 @@ function formatState(state) {
 $(".Selector").select2({
     templateSelection: formatState
 });
+
+
+//media query js for wide select
